@@ -1,0 +1,20 @@
+{% macro statusBadge(params) %}
+ 
+{%- from "../../../node_modules/govuk-frontend/govuk/components/tag/macro.njk" import govukTag -%}
+
+    {% set tagClass = "" %}
+    {% switch params.status %}
+    {% case "rejected" %}
+        {% set tagClass = "govuk-tag--red" %}
+    {% case "accepted" %}
+        {% set tagClass = "govuk-tag--green" %}
+    {% default %}
+        {% set tagClass = "" %}
+    {% endswitch %}
+
+    {{ govukTag({
+                text: params.status,
+                classes: tagClass
+            })
+    }}
+{% endmacro %}

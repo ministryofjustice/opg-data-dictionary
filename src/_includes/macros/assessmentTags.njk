@@ -1,0 +1,21 @@
+{% macro assessmentTags(params) %}
+ 
+{%- from "../../../node_modules/govuk-frontend/govuk/components/tag/macro.njk" import govukTag -%}
+<ul class="govuk-list govuk-list--inline">
+    {% for tag in params | sort %}
+        {% if tag !== 'research_development' %}
+            {% if tag !== 'adr' %}
+                <li>
+                    <a class="govuk-link" href="/tags/{{ tag }}/" title="View all documents labelled {{tag.replace('_', ' ')}}">
+                        {{ govukTag({
+                                text: tag.replace('_', ' '),
+                                classes: "govuk-tag--blue"
+                            })
+                        }}
+                    </a>
+                </li>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</ul>
+{% endmacro %}

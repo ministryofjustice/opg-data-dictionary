@@ -1,0 +1,26 @@
+---
+layout: layouts/fullwidth.njk
+backLink: "/research-development/"
+---
+
+<h1 class="govuk-heading-xl">{{title}}</h1>
+
+{%- from "../../_includes/macros/pageContentMetaData.njk" import pageContentMetaData %}
+{{ pageContentMetaData(date, contributors, undefined, tags) }}
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Table of Contents
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <nav aria-label="Contents" role="navigation">
+        {{ content | toc | safe }}
+    </nav>
+  </div>
+</details>
+
+{{ content | safe }}
+
+{%- include "../partials/githubHistory.njk" -%}
