@@ -1,6 +1,6 @@
-var COOKIE_NAME = "modernising_cookie_policy";
+var COOKIE_NAME = "data_dictionary_cookie_policy";
 var PREFS_SELECTOR = 'input[name="ga-preferences"]';
-var GA_ANALYTICS_ID = "G-70EPL8ZB7Y";
+var GA_ANALYTICS_ID = ""; //fix once done
 
 function init() {
   var gaCookieValue = getCookie(COOKIE_NAME);
