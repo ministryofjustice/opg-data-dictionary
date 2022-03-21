@@ -1,0 +1,75 @@
+{% macro pageContentMetaData(date, contributors, status, tags) %}
+{%- from "../../../node_modules/govuk-frontend/govuk/components/summary-list/macro.njk" import govukSummaryList %}
+{%- from "./datetime.njk" import datetime %}
+{%- from "./authorsList.njk" import authorsList %}
+{%- from "./statusBadge.njk" import statusBadge -%}
+{%- from "./assessmentTags.njk" import assessmentTags %}
+
+{% if status %}
+{{ govukSummaryList({
+  rows: [
+    {
+      key: {
+        text: "Date"
+      },
+      value: {
+        text: datetime(date)
+      }
+    },
+    {
+      key: {
+        text: "Authors"
+      },
+      value: {
+        html: authorsList(contributors)
+      }
+    },
+    {
+      key: {
+        text: "Status"
+      },
+      value: {
+        html: statusBadge({status: status})
+      }
+    },
+    {
+      key: {
+        text: "Areas"
+      },
+      value: {
+        html: assessmentTags(tags)
+      }
+    }
+  ]
+}) }}
+{% else %}
+{{ govukSummaryList({
+  rows: [
+    {
+      key: {
+        text: "Date"
+      },
+      value: {
+        text: datetime(date)
+      }
+    },
+    {
+      key: {
+        text: "Authors"
+      },
+      value: {
+        html: authorsList(contributors)
+      }
+    },
+    {
+      key: {
+        text: "Areas"
+      },
+      value: {
+        html: assessmentTags(tags)
+      }
+    }
+  ]
+}) }}
+{% endif %}
+{% endmacro %}

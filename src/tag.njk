@@ -1,0 +1,14 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag }}/
+layout: layouts/fullwidth.njk
+backLink: "/"
+eleventyComputed:
+  title: "{{ tag.replace('_', ' ') | capitalize }} articles"
+---
+
+{%- from "./_includes/macros/indexlist.njk" import indexList %}
+{{ indexList(title, '', collections[ tag ]) }}
