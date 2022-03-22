@@ -1,0 +1,38 @@
+---
+title: Persons Table - Sirius Case Management
+layout: layouts/fullwidth.njk
+---
+
+<table class="govuk-table">
+    <tr>
+        <th scope="col">
+            Column Name
+        </th>
+        <th scope="col">
+            Character Maximum
+        </th>
+        <th scope="col">
+            Is Nullable
+        </th>
+        <th scope="col">
+            Default
+        </th>
+
+    {% for column in persons.columns %}
+    <tr>
+        <td>
+            1
+            {{ column.column_name }}
+        </td>
+        <td>
+            {{ column.character_maximum_length}}
+        </td>
+        <td>
+            {{ column.is_nullable }}
+        </td>
+        <td>
+            {{ column.column_default}}
+        </td>
+    </tr>
+    {% endfor %}
+</table>       

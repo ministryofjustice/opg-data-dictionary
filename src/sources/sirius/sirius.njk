@@ -1,0 +1,11 @@
+---
+title: Sirius Case Management
+layout: layouts/fullwidth.njk
+---
+<p>Sirius is the case management system of the OPG. Tables referenced here</p>
+
+<ul>
+{% for table in sirius.tables %}
+ <li>{{ table.name }}</li>
+ {% endfor }
+ </ul>

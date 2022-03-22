@@ -1,0 +1,8 @@
+{
+    "name": "Sirius Case Management",
+    "tables": [
+        {
+            "name": "persons"
+        }
+    ]
+}
