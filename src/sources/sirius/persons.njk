@@ -2,36 +2,49 @@
 title: Persons Table - Sirius Case Management
 layout: layouts/fullwidth.njk
 ---
+<h1 class="govuk-heading-l">{{title}}</h1>
+<p class="govuk-body-l"> The persons table includes data on people within the Sirius system. It contains both LPA, Guardianship and Supervision data, as well as data relating to persons who are informed parties.</p>
+<p class="govuk-body"><strong>Stability:</strong> The persons table is to be considered <strong>unstable</strong> and likely to change due to ongoing development work.</p>
 
-<table class="govuk-table">
-    <tr>
-        <th scope="col">
+<table class="govuk-table govuk-!-font-size-16">
+      <caption class="govuk-table__caption govuk-table__caption--m">Persons table columns</caption>
+
+   <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+        <th scope="col"  class="govuk-table__header">
             Column Name
         </th>
-        <th scope="col">
+        <th scope="col"  class="govuk-table__header">
             Character Maximum
         </th>
-        <th scope="col">
+        <th scope="col"  class="govuk-table__header">
             Is Nullable
         </th>
-        <th scope="col">
+        <th scope="col"  class="govuk-table__header">
             Default
+        </th>
+        <th scope="col"  class="govuk-table__header">
+        Constrained values
         </th>
 
     {% for column in persons.columns %}
     <tr>
-        <td>
-            1
+        <th scope="row" class="govuk-table__header">
             {{ column.column_name }}
         </td>
-        <td>
+        <td class="govuk-table__cell">
             {{ column.character_maximum_length}}
         </td>
-        <td>
+        <td class="govuk-table__cell">
             {{ column.is_nullable }}
         </td>
-        <td>
+        <td class="govuk-table__cell">
             {{ column.column_default}}
+        </td>
+        <td class="govuk-table__cell">
+            {% for ref, refclass in persons_refdata[column.column_name] %}
+            {{ ref }},
+            {% endfor %}
         </td>
     </tr>
     {% endfor %}

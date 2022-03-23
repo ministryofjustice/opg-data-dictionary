@@ -2,10 +2,12 @@
 title: Sirius Case Management
 layout: layouts/fullwidth.njk
 ---
-<p>Sirius is the case management system of the OPG. Tables referenced here</p>
 
-<ul>
+<h1 class="govuk-heading-l">{{title}}</h1>
+<p class="govuk-body-l">Sirius is the case management system of the OPG. </p>
+<p class="govuk-body">Tables referenced here:</p>
+<ul class="govuk-body">
 {% for table in sirius.tables %}
- <li>{{ table.name }}</li>
- {% endfor }
+ <li><a class="govuk-link" href="{{ table.name }}">{{ table.name }}</a></li>
+ {% endfor %}
  </ul>
