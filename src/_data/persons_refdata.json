@@ -15,5 +15,44 @@
         "actor_contact": "Opg\\Core\\Model\\Entity\\CaseActor\\Contact",
         "actor_deputy": "Opg\\Core\\Model\\Entity\\CaseActor\\Deputy",
         "actor_fee_payer": "Opg\\Core\\Model\\Entity\\CaseActor\\FeePayer"
+    },
+    "clientstatus": {
+        "OPEN" : "OPEN",
+        "ACTIVE" : "ACTIVE",
+        "INACTIVE" : "INACTIVE",
+        "DECEASED" : "DECEASED",
+        "CLOSED" : "CLOSED",
+        "DUPLICATE" : "DUPLICATE",
+        "REGAINED_CAPACITY" : "REGAINED_CAPACITY",
+        "DEATH_CONFIRMED" : "DEATH_CONFIRMED",
+        "DEATH_NOTIFIED" : "DEATH_NOTIFIED"
+    },
+    "deputystatus": {
+        "DEPUTY_STATUS_ACTIVE" : "Active",
+        "DEPUTY_STATUS_DEATH_NOTIFIED" : "Death Notified",
+        "DEPUTY_STATUS_DECEASED" : "Deceased",
+        "DEPUTY_STATUS_ERROR" : "Error",
+        "DEPUTY_STATUS_INACTIVE" : "Inactive"
+    
+    },
+    "deputytype": {
+        "LAY" : "LAY",
+        "PRO" : "PRO",
+        "PA" : "PA"
+    },
+    "clientsource": {
+        "SIRIUS" : "SIRIUS",
+        "SERVOPG" : "SERVOPG",
+        "SKELETON" : "SKELETON",
+        "CASRECMIGRATION" : "CASRECMIGRATION",
+        "CASRECMIGRATION_P2" : "CASRECMIGRATION_P2",
+        "FULLY_MIGRATED" : "FULLY_MIGRATED"
+    },
+    "caseactorgroup":{
+        "CLIENT-PILOT-ONE" : "CLIENT-PILOT-ONE"
+    },
+    "deputysubtype" : {
+        "PERSON" : "PERSON",
+        "ORGANISATION" : "ORGANISATION"
     }
 }
