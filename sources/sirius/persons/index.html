@@ -1,0 +1,1887 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#0b0c0c">
+    
+    <link rel="preload" href="/assets/fonts/light-94a07e06a1-v2.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/bold-b542beb274-v2.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/styles.css" rel="stylesheet" as="style">
+
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/assets/images/moj-apple-touch-icon-180x180.png" sizes="180x180">
+    <link rel="apple-touch-icon" href="/assets/images/moj-apple-touch-icon-167x167.png" sizes="167x167">
+    <link rel="apple-touch-icon" href="/assets/images/moj-apple-touch-icon-152x152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="/assets/images/moj-apple-touch-icon.png">
+
+    <meta name="description" content="Information on data schemas, formats and history">
+    <meta property="og:image" content="/assets/images/moj-opengraph-image.png">
+
+    <link href="/assets/styles.css" rel="stylesheet">
+    <script src="/assets/index.js" defer></script>
+    <title>Persons Table - Sirius Case Management - OPG Data Dictionary</title>
+  </head>
+  <body class="govuk-template__body">
+    <a href="#content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
+
+    
+      <div>
+        
+
+        
+
+        
+
+        
+
+        <div class="govuk-cookie-banner js-cookie-banner-confirm" data-nosnippet role="region" aria-label="Cookies on OPG Data Dictionary" hidden>
+    
+    
+
+    <div class="govuk-cookie-banner__message govuk-width-container"
+    >
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        
+
+        <div class="govuk-cookie-banner__content">
+          <p class="govuk-body">You’ve accepted additional cookies. You can <a class="govuk-link" href="/view-cookies">change your cookie settings</a> at any time.</p>
+        </div>
+      </div>
+    </div>
+
+      
+      <div class="govuk-button-group">
+        
+          
+            <button value="hide" type="button" name="cookies" class="govuk-button" data-module="govuk-button">
+              Hide this message
+            </button>
+          
+        
+      </div>
+      
+    </div>
+  
+</div>
+
+
+        <div class="govuk-cookie-banner js-cookie-banner-reject" data-nosnippet role="region" aria-label="Cookies on OPG Data Dictionary" hidden>
+    
+    
+
+    <div class="govuk-cookie-banner__message govuk-width-container"
+    >
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        
+
+        <div class="govuk-cookie-banner__content">
+          <p class="govuk-body">You’ve rejected analytics cookies. You can <a class="govuk-link" href="/view-cookies">change your cookie settings</a> at any time.</p>
+        </div>
+      </div>
+    </div>
+
+      
+      <div class="govuk-button-group">
+        
+          
+            <button value="hide" type="button" name="cookies" class="govuk-button" data-module="govuk-button">
+              Hide this message
+            </button>
+          
+        
+      </div>
+      
+    </div>
+  
+</div>
+
+
+        <div class="govuk-cookie-banner js-cookie-banner" data-nosnippet role="region" aria-label="Cookies on OPG Data Dictionary">
+    
+    
+
+    <div class="govuk-cookie-banner__message govuk-width-container"
+    >
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        
+        <h2 class="govuk-cookie-banner__heading govuk-heading-m">Cookies on OPG Data Dictionary</h2>
+        
+
+        <div class="govuk-cookie-banner__content">
+          <p class="govuk-body">We’d like to use analytics cookies so we can understand how you use the service and make improvements.</p>
+        </div>
+      </div>
+    </div>
+
+      
+      <div class="govuk-button-group">
+        
+          
+            <button value="accept" type="button" name="cookies" class="govuk-button" data-module="govuk-button">
+              Accept analytics cookies
+            </button>
+          
+        
+          
+            <button value="reject" type="button" name="cookies" class="govuk-button" data-module="govuk-button">
+              Reject analytics cookies
+            </button>
+          
+        
+          
+            
+              
+              
+              <a class="govuk-link" href="/view-cookies">View cookies</a>
+            
+          
+        
+      </div>
+      
+    </div>
+  
+</div>
+
+
+        
+    <header class="govuk-header " role="banner" data-module="govuk-header">
+    <div class="govuk-header__container govuk-width-container">
+        
+        <div class="govuk-header__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+        prototype
+        </strong>
+        
+        <a href="/" class="govuk-header__link govuk-header__link--service-name">
+        OPG Data Dictionary
+        </a>
+        
+        
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide navigation menu">Menu</button>
+        <nav>
+        <ul id="navigation" class="govuk-header__navigation " aria-label="Navigation menu">
+            
+        </ul>
+        </nav>
+        
+        </div>
+        
+    </div>
+    </header>
+
+
+        
+        <div id="content" class="govuk-width-container">
+
+          
+
+          <main class="govuk-main-wrapper" role="main">
+
+            <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <h1 class="govuk-heading-l">Persons Table - Sirius Case Management</h1>
+<p class="govuk-body-l"> The persons table includes data on people within the Sirius system. It contains both LPA, Guardianship and Supervision data, as well as data relating to persons who are informed parties.</p>
+<p class="govuk-body"><strong>Stability:</strong> The persons table is to be considered <strong>unstable</strong> and likely to change due to ongoing development work.</p>
+
+<table class="govuk-table govuk-!-font-size-16">
+      <caption class="govuk-table__caption govuk-table__caption--m">Persons table columns</caption>
+
+   <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+        <th scope="col"  class="govuk-table__header">
+            Column Name
+        </th>
+        <th scope="col"  class="govuk-table__header">
+            Character Maximum
+        </th>
+        <th scope="col"  class="govuk-table__header">
+            Is Nullable
+        </th>
+        <th scope="col"  class="govuk-table__header">
+            Default
+        </th>
+        <th scope="col"  class="govuk-table__header">
+        Constrained values
+        </th>
+
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            id
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            NO
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            parent_id
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            email
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            dob
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            dateofdeath
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            salutation
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            firstname
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            middlenames
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            surname
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            othernames
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            correspondencebypost
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            NO
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            correspondencebyphone
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            NO
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            correspondencebyemail
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            NO
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            occupation
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            createddate
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::timestamp without time zone
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            uid
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            NO
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            type
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            NO
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+            lpa_attorney,
+            
+            lpa_replacement_attorney,
+            
+            lpa_trust_corporation,
+            
+            lpa_correspondent,
+            
+            lpa_donor,
+            
+            lpa_notified_person,
+            
+            lpa_certificate_provider,
+            
+            actor_non_case_contact,
+            
+            actor_notified_relative,
+            
+            actor_notified_attorney,
+            
+            actor_notified_donor,
+            
+            actor_client,
+            
+            actor_contact,
+            
+            actor_deputy,
+            
+            actor_fee_payer,
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            lpa002signaturedate
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            dxnumber
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            dxexchange
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            lpapartcsignaturedate
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            companyname
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            companynumber
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            systemstatus
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            true
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            relationshiptodonor
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            isreplacementattorney
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            false
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            istrustcorporation
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            false
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            trustcorporationappointedas
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            signatoryone
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            signatorytwo
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            companyseal
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            previousnames
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            cannotsignform
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            applyingforfeeremission
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            receivingbenefits
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            receiveddamageaward
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            haslowincome
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            signaturedate
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            haspreviouslpa
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            notesforpreviouslpa
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            sageid
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            noticegivendate
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            certificateproviderstatementtype
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            statement
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            certificateproviderskills
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            fullname
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            caserecnumber
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            clientaccommodation
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            maritalstatus
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            clientstatus
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+            OPEN,
+            
+            ACTIVE,
+            
+            INACTIVE,
+            
+            DECEASED,
+            
+            CLOSED,
+            
+            DUPLICATE,
+            
+            REGAINED_CAPACITY,
+            
+            DEATH_CONFIRMED,
+            
+            DEATH_NOTIFIED,
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            statusdate
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            deputyreferencenumber
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            deputycompliance
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            relationshiptoclient
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            correspondencebywelsh
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            NO
+        </td>
+        <td class="govuk-table__cell">
+            false
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            medicalcondition
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            interpreterrequired
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            mobilenumber
+        </td>
+        <td class="govuk-table__cell">
+            15
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            countryofresidence
+        </td>
+        <td class="govuk-table__cell">
+            40
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            newsletter
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            false
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            specialcorrespondencerequirements_audiotape
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            NO
+        </td>
+        <td class="govuk-table__cell">
+            false
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            specialcorrespondencerequirements_largeprint
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            NO
+        </td>
+        <td class="govuk-table__cell">
+            false
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            specialcorrespondencerequirements_hearingimpaired
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            NO
+        </td>
+        <td class="govuk-table__cell">
+            false
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            specialcorrespondencerequirements_spellingofnamerequirescare
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            NO
+        </td>
+        <td class="govuk-table__cell">
+            false
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            client_id
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            companyreference
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            feepayer_id
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            isorganisation
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            false
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            correspondencename
+        </td>
+        <td class="govuk-table__cell">
+            200
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            deputystatus
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+            DEPUTY_STATUS_ACTIVE,
+            
+            DEPUTY_STATUS_DEATH_NOTIFIED,
+            
+            DEPUTY_STATUS_DECEASED,
+            
+            DEPUTY_STATUS_ERROR,
+            
+            DEPUTY_STATUS_INACTIVE,
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            casesmanagedashybrid
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            false
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            deputytype
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+            LAY,
+            
+            PRO,
+            
+            PA,
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            supervisioncaseowner_id
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            clientsource
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+            SIRIUS,
+            
+            SERVOPG,
+            
+            SKELETON,
+            
+            CASRECMIGRATION,
+            
+            CASRECMIGRATION_P2,
+            
+            FULLY_MIGRATED,
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            memorablephrase
+        </td>
+        <td class="govuk-table__cell">
+            30
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            risk_score
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            caseactorgroup
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+            CLIENT-PILOT-ONE,
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            updateddate
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::timestamp without time zone
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            executor_id
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            deputycasrecid
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            organisationname
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            organisationteamordepartmentname
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            deputynumber
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            executivecasemanager_id
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            deputysubtype
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+            PERSON,
+            
+            ORGANISATION,
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            firm_id
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+</table>       
+    </div>
+</div>
+
+            
+          </main>
+        </div>
+        
+
+        
+    <footer class="govuk-footer " role="contentinfo">
+    <div class="govuk-width-container ">
+        
+        <div class="govuk-footer__meta">
+        <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+            
+            <h2 class="govuk-visually-hidden">Support links</h2>
+            
+                <ul class="govuk-footer__inline-list">
+                
+                    <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/view-cookies/">
+                        Cookies
+                    </a>
+                    </li>
+                
+                </ul>
+            
+            
+            
+            
+        </div>
+        </div>
+    </div>
+    </footer>
+
+
+
+      </div>
+    
+  </body>
+</html>
