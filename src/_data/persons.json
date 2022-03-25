@@ -1,0 +1,606 @@
+{
+    "columns": [
+        {
+            "column_name": "id",
+            "data_type": "integer",
+            "character_maximum_length": null,
+            "is_nullable": "NO",
+            "column_default": null
+        },
+        {
+            "column_name": "parent_id",
+            "data_type": "integer",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": null
+        },
+        {
+            "column_name": "email",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "dob",
+            "data_type": "date",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": null
+        },
+        {
+            "column_name": "dateofdeath",
+            "data_type": "date",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": null
+        },
+        {
+            "column_name": "salutation",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "firstname",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "middlenames",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "surname",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "othernames",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "correspondencebypost",
+            "data_type": "boolean",
+            "character_maximum_length": null,
+            "is_nullable": "NO",
+            "column_default": null
+        },
+        {
+            "column_name": "correspondencebyphone",
+            "data_type": "boolean",
+            "character_maximum_length": null,
+            "is_nullable": "NO",
+            "column_default": null
+        },
+        {
+            "column_name": "correspondencebyemail",
+            "data_type": "boolean",
+            "character_maximum_length": null,
+            "is_nullable": "NO",
+            "column_default": null
+        },
+        {
+            "column_name": "occupation",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "createddate",
+            "data_type": "timestamp without time zone",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": "NULL::timestamp without time zone"
+        },
+        {
+            "column_name": "uid",
+            "data_type": "bigint",
+            "character_maximum_length": null,
+            "is_nullable": "NO",
+            "column_default": null
+        },
+        {
+            "column_name": "type",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "NO",
+            "column_default": null
+        },
+        {
+            "column_name": "lpa002signaturedate",
+            "data_type": "date",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": null
+        },
+        {
+            "column_name": "dxnumber",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "dxexchange",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "lpapartcsignaturedate",
+            "data_type": "date",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": null
+        },
+        {
+            "column_name": "companyname",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "companynumber",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "systemstatus",
+            "data_type": "boolean",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": "true"
+        },
+        {
+            "column_name": "relationshiptodonor",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "isreplacementattorney",
+            "data_type": "boolean",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": "false"
+        },
+        {
+            "column_name": "istrustcorporation",
+            "data_type": "boolean",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": "false"
+        },
+        {
+            "column_name": "trustcorporationappointedas",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "signatoryone",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "signatorytwo",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "companyseal",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "previousnames",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "cannotsignform",
+            "data_type": "boolean",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": null
+        },
+        {
+            "column_name": "applyingforfeeremission",
+            "data_type": "boolean",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": null
+        },
+        {
+            "column_name": "receivingbenefits",
+            "data_type": "boolean",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": null
+        },
+        {
+            "column_name": "receiveddamageaward",
+            "data_type": "boolean",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": null
+        },
+        {
+            "column_name": "haslowincome",
+            "data_type": "boolean",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": null
+        },
+        {
+            "column_name": "signaturedate",
+            "data_type": "date",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": null
+        },
+        {
+            "column_name": "haspreviouslpa",
+            "data_type": "boolean",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": null
+        },
+        {
+            "column_name": "notesforpreviouslpa",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "sageid",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "noticegivendate",
+            "data_type": "date",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": null
+        },
+        {
+            "column_name": "certificateproviderstatementtype",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "statement",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "certificateproviderskills",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "fullname",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "caserecnumber",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "clientaccommodation",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "maritalstatus",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "clientstatus",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "statusdate",
+            "data_type": "date",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": null
+        },
+        {
+            "column_name": "deputyreferencenumber",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "deputycompliance",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "relationshiptoclient",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "correspondencebywelsh",
+            "data_type": "boolean",
+            "character_maximum_length": null,
+            "is_nullable": "NO",
+            "column_default": "false"
+        },
+        {
+            "column_name": "medicalcondition",
+            "data_type": "text",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": null
+        },
+        {
+            "column_name": "interpreterrequired",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "mobilenumber",
+            "data_type": "character varying",
+            "character_maximum_length": 15,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "countryofresidence",
+            "data_type": "character varying",
+            "character_maximum_length": 40,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "newsletter",
+            "data_type": "boolean",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": "false"
+        },
+        {
+            "column_name": "specialcorrespondencerequirements_audiotape",
+            "data_type": "boolean",
+            "character_maximum_length": null,
+            "is_nullable": "NO",
+            "column_default": "false"
+        },
+        {
+            "column_name": "specialcorrespondencerequirements_largeprint",
+            "data_type": "boolean",
+            "character_maximum_length": null,
+            "is_nullable": "NO",
+            "column_default": "false"
+        },
+        {
+            "column_name": "specialcorrespondencerequirements_hearingimpaired",
+            "data_type": "boolean",
+            "character_maximum_length": null,
+            "is_nullable": "NO",
+            "column_default": "false"
+        },
+        {
+            "column_name": "specialcorrespondencerequirements_spellingofnamerequirescare",
+            "data_type": "boolean",
+            "character_maximum_length": null,
+            "is_nullable": "NO",
+            "column_default": "false"
+        },
+        {
+            "column_name": "client_id",
+            "data_type": "integer",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": null
+        },
+        {
+            "column_name": "companyreference",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": null
+        },
+        {
+            "column_name": "feepayer_id",
+            "data_type": "integer",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": null
+        },
+        {
+            "column_name": "isorganisation",
+            "data_type": "boolean",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": "false"
+        },
+        {
+            "column_name": "correspondencename",
+            "data_type": "character varying",
+            "character_maximum_length": 200,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "deputystatus",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "casesmanagedashybrid",
+            "data_type": "boolean",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": "false"
+        },
+        {
+            "column_name": "deputytype",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "supervisioncaseowner_id",
+            "data_type": "integer",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": null
+        },
+        {
+            "column_name": "clientsource",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "memorablephrase",
+            "data_type": "character varying",
+            "character_maximum_length": 30,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "risk_score",
+            "data_type": "integer",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": null
+        },
+        {
+            "column_name": "caseactorgroup",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "updateddate",
+            "data_type": "timestamp without time zone",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": "NULL::timestamp without time zone"
+        },
+        {
+            "column_name": "executor_id",
+            "data_type": "integer",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": null
+        },
+        {
+            "column_name": "deputycasrecid",
+            "data_type": "integer",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": null
+        },
+        {
+            "column_name": "organisationname",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "organisationteamordepartmentname",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "deputynumber",
+            "data_type": "integer",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": null
+        },
+        {
+            "column_name": "executivecasemanager_id",
+            "data_type": "integer",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": null
+        },
+        {
+            "column_name": "deputysubtype",
+            "data_type": "character varying",
+            "character_maximum_length": 255,
+            "is_nullable": "YES",
+            "column_default": "NULL::character varying"
+        },
+        {
+            "column_name": "firm_id",
+            "data_type": "integer",
+            "character_maximum_length": null,
+            "is_nullable": "YES",
+            "column_default": null
+        }
+    ]
+}

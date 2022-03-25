@@ -1,0 +1,58 @@
+{
+    "type": {
+        "lpa_attorney": "Opg\\Core\\Model\\Entity\\CaseActor\\Attorney",
+        "lpa_replacement_attorney": "Opg\\Core\\Model\\Entity\\CaseActor\\ReplacementAttorney",
+        "lpa_trust_corporation": "Opg\\Core\\Model\\Entity\\CaseActor\\TrustCorporation",
+        "lpa_correspondent": "Opg\\Core\\Model\\Entity\\CaseActor\\Correspondent",
+        "lpa_donor": "Opg\\Core\\Model\\Entity\\CaseActor\\Donor",
+        "lpa_notified_person": "Opg\\Core\\Model\\Entity\\CaseActor\\NotifiedPerson",
+        "lpa_certificate_provider": "Opg\\Core\\Model\\Entity\\CaseActor\\CertificateProvider",
+        "actor_non_case_contact": "Opg\\Core\\Model\\Entity\\CaseActor\\NonCaseContact",
+        "actor_notified_relative": "Opg\\Core\\Model\\Entity\\CaseActor\\NotifiedRelative",
+        "actor_notified_attorney": "Opg\\Core\\Model\\Entity\\CaseActor\\NotifiedAttorney",
+        "actor_notified_donor": "Opg\\Core\\Model\\Entity\\CaseActor\\PersonNotifyDonor",
+        "actor_client": "Opg\\Core\\Model\\Entity\\CaseActor\\Client",
+        "actor_contact": "Opg\\Core\\Model\\Entity\\CaseActor\\Contact",
+        "actor_deputy": "Opg\\Core\\Model\\Entity\\CaseActor\\Deputy",
+        "actor_fee_payer": "Opg\\Core\\Model\\Entity\\CaseActor\\FeePayer"
+    },
+    "clientstatus": {
+        "OPEN" : "OPEN",
+        "ACTIVE" : "ACTIVE",
+        "INACTIVE" : "INACTIVE",
+        "DECEASED" : "DECEASED",
+        "CLOSED" : "CLOSED",
+        "DUPLICATE" : "DUPLICATE",
+        "REGAINED_CAPACITY" : "REGAINED_CAPACITY",
+        "DEATH_CONFIRMED" : "DEATH_CONFIRMED",
+        "DEATH_NOTIFIED" : "DEATH_NOTIFIED"
+    },
+    "deputystatus": {
+        "DEPUTY_STATUS_ACTIVE" : "Active",
+        "DEPUTY_STATUS_DEATH_NOTIFIED" : "Death Notified",
+        "DEPUTY_STATUS_DECEASED" : "Deceased",
+        "DEPUTY_STATUS_ERROR" : "Error",
+        "DEPUTY_STATUS_INACTIVE" : "Inactive"
+    
+    },
+    "deputytype": {
+        "LAY" : "LAY",
+        "PRO" : "PRO",
+        "PA" : "PA"
+    },
+    "clientsource": {
+        "SIRIUS" : "SIRIUS",
+        "SERVOPG" : "SERVOPG",
+        "SKELETON" : "SKELETON",
+        "CASRECMIGRATION" : "CASRECMIGRATION",
+        "CASRECMIGRATION_P2" : "CASRECMIGRATION_P2",
+        "FULLY_MIGRATED" : "FULLY_MIGRATED"
+    },
+    "caseactorgroup":{
+        "CLIENT-PILOT-ONE" : "CLIENT-PILOT-ONE"
+    },
+    "deputysubtype" : {
+        "PERSON" : "PERSON",
+        "ORGANISATION" : "ORGANISATION"
+    }
+}
