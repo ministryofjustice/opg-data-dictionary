@@ -2,7 +2,60 @@
     "name": "Sirius Case Management",
     "tables": [
         {
-            "name": "persons"
+            "name": "persons",
+            "display": true
+        },
+        {
+            "name": "addresses",
+            "display": false
+        },
+        {
+            "name": "caseitem_document",
+            "display": false
+        },
+        {
+            "name": "caseitem_warning",
+            "display": false
+        },
+        {
+            "name": "cases",
+            "display": true
+        },
+        {
+            "name": "complaints",
+            "display": false
+        },
+        {
+            "name": "document",
+            "display": false
+        },
+        {
+            "name": "investigation",
+            "display": false
+        },
+        {
+            "name": "pa_applicants",
+            "display": false
+        },
+        {
+            "name": "person_caseitem",
+            "display": false
+        },
+        {
+            "name": "person_research_preferences",
+            "display": false
+        },
+        {
+            "name": "person_warning”",
+            "display": false
+        },
+        {
+            "name": "person_document",
+            "display": false
+        },
+        {
+            "name": "warnings",
+            "display": false
         }
     ]
 }

@@ -8,6 +8,8 @@ layout: layouts/fullwidth.njk
 <p class="govuk-body">Tables referenced here:</p>
 <ul class="govuk-body">
 {% for table in sirius.tables %}
- <li><a class="govuk-link" href="{{ table.name }}">{{ table.name }}</a></li>
+    {% if table.display %}
+    <li><a class="govuk-link" href="{{ table.name }}">{{ table.name }}</a></li>
+    {% endif %}
  {% endfor %}
  </ul>
