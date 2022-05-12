@@ -1,5 +1,8 @@
 {
-
+    "name":"cases",
+    "stability":"unstable",
+    "summary":"Contains details of LPA, Supervision and Guardianship cases",
+    "in_analytical_platform":true,
     "columns":[
         {"column_name":"id","data_type":"integer","column_default":null,"is_nullable":"NO","character_maximum_length":null},
         {"column_name":"assignee_id","data_type":"integer","column_default":null,"is_nullable":"YES","character_maximum_length":null},

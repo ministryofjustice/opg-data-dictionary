@@ -1,0 +1,18 @@
+---
+layout: layouts/fullwidth.njk
+---
+{% from "../../../node_modules/govuk-frontend/govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Data Dictionary",
+      href: "/"
+    },
+    {
+      text: "Sirius",
+      href: "/sources/sirius/"
+    }
+  ]
+}) }}
+{{ content | safe }}

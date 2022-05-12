@@ -1,0 +1,41 @@
+{%- from "../../_includes/macros/dataTable.njk" import dataTable %}
+
+{% from "../../../node_modules/govuk-frontend/govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+{%- from "../../../node_modules/govuk-frontend/govuk/components/tag/macro.njk" import govukTag -%}
+
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Date Dictionary",
+      href: "/"
+    },
+    {
+      text: "Sirius",
+      href: "/sources/sirius/"
+    },
+    {
+      text: table.name  | capitalize,
+      href: "/sources/sirius/"+table.name 
+    }
+  ]
+}) }}
+
+<h1 class="govuk-heading-l">{{title}}</h1>
+<p class="govuk-body-l"> {{table.summary}}</p>
+<p class="govuk-body"><strong>Stability:</strong> 
+
+The {{table.name}} table is to be considered <strong>{{table.stability}}</strong> {% if table.stability=="unstable" %} 
+
+and likely to change due to ongoing development work {% endif %}.</p>
+
+<p class="govuk-body"><strong>Analytical Platform</strong> : {% if table.in_analytical_platform %} Yes {% else %} No{% endif %}</p>
+<p class="govuk-body"><strong>Alternative formats</strong> : <a href="/data/{{table.name}}.json"><abbr title="JavaScript Object Notation">{{ govukTag({
+  text: "JSON",
+  classes: "govuk-tag--orange"
+}) }}</abbr></a>
+
+{{ dataTable(table, refdata)}}
+
+
+

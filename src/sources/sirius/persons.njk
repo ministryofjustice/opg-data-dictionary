@@ -1,16 +1,7 @@
 ---
 title: Persons Table - Sirius Case Management
 layout: layouts/fullwidth.njk
-summary: The persons table includes data on people within the Sirius system. It contains both LPA, Guardianship and Supervision data, as well as data relating to persons who are informed parties.
-stability: unstable
-table_source: persons
 ---
-<h1 class="govuk-heading-l">{{title}}</h1>
-<p class="govuk-body-l"> {{summary}}</p>
-<p class="govuk-body"><strong>Stability:</strong> 
-
-The {{table_source}} table is to be considered <strong>{{stability}}</strong> {% if stability=="unstable" %} 
-
-and likely to change due to ongoing development work {% endif %}.</p>
-
-{% include "../../_includes/layouts/data-table.njk" %}
+{% set table = persons %}
+{% set refdata = persons_refdata %}
+{% include "../../_includes/layouts/dataTableInfo.njk" %}
