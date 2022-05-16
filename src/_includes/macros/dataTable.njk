@@ -7,6 +7,9 @@
         <th scope="col"  class="govuk-table__header">
             Column Name
         </th>
+         <th scope="col"  class="govuk-table__header">
+            Column Type
+        </th>
         <th scope="col"  class="govuk-table__header">
             Character Maximum
         </th>
@@ -24,6 +27,9 @@
     <tr>
         <th scope="row" class="govuk-table__header">
             {{ column.column_name }}
+        </td>
+        <td class="govuk-table__cell">
+            {{ column.data_type}}
         </td>
         <td class="govuk-table__cell">
             {{ column.character_maximum_length}}

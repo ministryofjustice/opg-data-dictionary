@@ -1,7 +1,7 @@
 {
-    "name": "cases",
+    "name": "addresses",
     "stability": "unstable",
-    "summary": "Contains details of LPA, Supervision and Guardianship cases",
+    "summary": "Contains details of addresses associated with persons in the database",
     "in_analytical_platform": true,
     "columns": [
         {
