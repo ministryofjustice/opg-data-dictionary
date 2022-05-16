@@ -7,7 +7,7 @@
         },
         {
             "name": "addresses",
-            "display": false
+            "display": true
         },
         {
             "name": "caseitem_document",

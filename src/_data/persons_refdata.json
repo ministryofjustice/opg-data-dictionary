@@ -17,42 +17,62 @@
         "actor_fee_payer": "Opg\\Core\\Model\\Entity\\CaseActor\\FeePayer"
     },
     "clientstatus": {
-        "OPEN" : "OPEN",
-        "ACTIVE" : "ACTIVE",
-        "INACTIVE" : "INACTIVE",
-        "DECEASED" : "DECEASED",
-        "CLOSED" : "CLOSED",
-        "DUPLICATE" : "DUPLICATE",
-        "REGAINED_CAPACITY" : "REGAINED_CAPACITY",
-        "DEATH_CONFIRMED" : "DEATH_CONFIRMED",
-        "DEATH_NOTIFIED" : "DEATH_NOTIFIED"
+        "OPEN": "OPEN",
+        "ACTIVE": "ACTIVE",
+        "INACTIVE": "INACTIVE",
+        "DECEASED": "DECEASED",
+        "CLOSED": "CLOSED",
+        "DUPLICATE": "DUPLICATE",
+        "REGAINED_CAPACITY": "REGAINED_CAPACITY",
+        "DEATH_CONFIRMED": "DEATH_CONFIRMED",
+        "DEATH_NOTIFIED": "DEATH_NOTIFIED"
     },
     "deputystatus": {
-        "DEPUTY_STATUS_ACTIVE" : "Active",
-        "DEPUTY_STATUS_DEATH_NOTIFIED" : "Death Notified",
-        "DEPUTY_STATUS_DECEASED" : "Deceased",
-        "DEPUTY_STATUS_ERROR" : "Error",
-        "DEPUTY_STATUS_INACTIVE" : "Inactive"
-    
+        "DEPUTY_STATUS_ACTIVE": "Active",
+        "DEPUTY_STATUS_DEATH_NOTIFIED": "Death Notified",
+        "DEPUTY_STATUS_DECEASED": "Deceased",
+        "DEPUTY_STATUS_ERROR": "Error",
+        "DEPUTY_STATUS_INACTIVE": "Inactive"
     },
     "deputytype": {
-        "LAY" : "LAY",
-        "PRO" : "PRO",
-        "PA" : "PA"
+        "LAY": "LAY",
+        "PRO": "PRO",
+        "PA": "PA"
     },
     "clientsource": {
-        "SIRIUS" : "SIRIUS",
-        "SERVOPG" : "SERVOPG",
-        "SKELETON" : "SKELETON",
-        "CASRECMIGRATION" : "CASRECMIGRATION",
-        "CASRECMIGRATION_P2" : "CASRECMIGRATION_P2",
-        "FULLY_MIGRATED" : "FULLY_MIGRATED"
+        "SIRIUS": "SIRIUS",
+        "SERVOPG": "SERVOPG",
+        "SKELETON": "SKELETON",
+        "CASRECMIGRATION": "CASRECMIGRATION",
+        "CASRECMIGRATION_P2": "CASRECMIGRATION_P2",
+        "FULLY_MIGRATED": "FULLY_MIGRATED"
     },
-    "caseactorgroup":{
-        "CLIENT-PILOT-ONE" : "CLIENT-PILOT-ONE"
+    "caseactorgroup": {
+        "CLIENT-PILOT-ONE": "CLIENT-PILOT-ONE"
     },
-    "deputysubtype" : {
-        "PERSON" : "PERSON",
-        "ORGANISATION" : "ORGANISATION"
+    "deputysubtype": {
+        "PERSON": "PERSON",
+        "ORGANISATION": "ORGANISATION"
+    },
+    "relationshiptoclient": {
+        "SIBLING": "Sibling",
+        "SPOUSE": "Spouse",
+        "CHILD": "Child of Client",
+        "PARENT": "Parent of Client",
+        "CIVIL": "Civil Partner",
+        "FRIEND": "Friend",
+        "PARTNER": "Partner (Not Civil Partner)",
+        "OTHERRELATION": "Other Relation",
+        "PANEL": "Panel Deputy",
+        "BANK": "Bank Official",
+        "SOLICITOR": "Solicitor",
+        "ACCOUNTANT": "Accountant",
+        "UNREGULATED": "Unregulated Pro Deputy",
+        "LEGAL": "Legal Professional",
+        "TRUST": "Trust Companies (Not NHS/PCT)",
+        "OTHERPROFESSIONAL": "Other Professional",
+        "LOCAL": "Local Authority",
+        "NHS": "NHS Trust",
+        "PCT": "PCT"
     }
 }
