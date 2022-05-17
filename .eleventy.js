@@ -9,6 +9,8 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ 'src/_includes/scripts': 'assets' });
     eleventyConfig.addPassthroughCopy({ 'src/CNAME': '' });
 
+    eleventyConfig.addPassthroughCopy({ 'src/_data': 'data' });
+
     eleventyConfig.addPlugin(pluginRss);
 
 

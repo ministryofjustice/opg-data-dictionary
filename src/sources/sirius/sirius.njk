@@ -1,13 +1,21 @@
 ---
 title: Sirius Case Management
-layout: layouts/fullwidth.njk
+layout: layouts//source.njk
 ---
+{%- from "../../../node_modules/govuk-frontend/govuk/components/tag/macro.njk" import govukTag -%}
 
 <h1 class="govuk-heading-l">{{title}}</h1>
 <p class="govuk-body-l">Sirius is the case management system of the OPG. </p>
 <p class="govuk-body">Tables referenced here:</p>
 <ul class="govuk-body">
 {% for table in sirius.tables %}
- <li><a class="govuk-link" href="{{ table.name }}">{{ table.name }}</a></li>
+    {% if table.display %}
+    <li><a class="govuk-link" href="{{ table.name }}">{{ table.name }}</a></li>
+    {% endif %}
  {% endfor %}
  </ul>
+
+ <a href="/data/sirius.json"><abbr title="JavaScript Object Notation">{{ govukTag({
+  text: "JSON",
+  classes: "govuk-tag--orange"
+}) }}</abbr></a>
