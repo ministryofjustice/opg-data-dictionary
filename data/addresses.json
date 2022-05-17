@@ -1,0 +1,78 @@
+{
+    "name": "addresses",
+    "stability": "unstable",
+    "summary": "Contains details of addresses associated with persons in the database",
+    "in_analytical_platform": true,
+    "columns": [
+        {
+            "column_name": "id",
+            "data_type": "integer",
+            "column_default": null,
+            "is_nullable": "NO",
+            "character_maximum_length": null
+        },
+        {
+            "column_name": "person_id",
+            "data_type": "integer",
+            "column_default": null,
+            "is_nullable": "YES",
+            "character_maximum_length": null
+        },
+        {
+            "column_name": "address_lines",
+            "data_type": "json",
+            "column_default": null,
+            "is_nullable": "YES",
+            "character_maximum_length": null
+        },
+        {
+            "column_name": "town",
+            "data_type": "character varying",
+            "column_default": "NULL::character varying",
+            "is_nullable": "YES",
+            "character_maximum_length": 255
+        },
+        {
+            "column_name": "county",
+            "data_type": "character varying",
+            "column_default": "NULL::character varying",
+            "is_nullable": "YES",
+            "character_maximum_length": 255
+        },
+        {
+            "column_name": "postcode",
+            "data_type": "character varying",
+            "column_default": "NULL::character varying",
+            "is_nullable": "YES",
+            "character_maximum_length": 255
+        },
+        {
+            "column_name": "country",
+            "data_type": "character varying",
+            "column_default": "NULL::character varying",
+            "is_nullable": "YES",
+            "character_maximum_length": 255
+        },
+        {
+            "column_name": "type",
+            "data_type": "character varying",
+            "column_default": "NULL::character varying",
+            "is_nullable": "YES",
+            "character_maximum_length": 255
+        },
+        {
+            "column_name": "isairmailrequired",
+            "data_type": "boolean",
+            "column_default": null,
+            "is_nullable": "YES",
+            "character_maximum_length": null
+        },
+        {
+            "column_name": "casrecaddressnumber",
+            "data_type": "integer",
+            "column_default": null,
+            "is_nullable": "YES",
+            "character_maximum_length": null
+        }
+    ]
+}

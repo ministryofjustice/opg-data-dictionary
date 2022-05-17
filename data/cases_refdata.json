@@ -1,0 +1,77 @@
+{
+    "applicationtype": {
+        "Classic": "Classic",
+        "Online": "Online"
+    },
+    "casetype": {
+        "LPA": "LPA",
+        "EPA": "EPA",
+        "ORDER": "ORDER"
+    },
+    "casesubtype": {
+        "hw": "Health and Welfare",
+        "pfa": "Property and Finance"
+    },
+    "status": {
+        "Cancelled": "Cancelled",
+        "Imperfect": "Imperfect",
+        "Invalid": "Invalid",
+        "Pending": "Pending",
+        "Perfect": "Perfect",
+        "Registered": "Registered",
+        "Rejected": "Rejected",
+        "Revoked": "Revoked",
+        "Withdrawn": "Withdrawn"
+    },
+    "howattorneysact": {
+        "JOINTLY": "JOINTLY",
+        "SEVERALLY": "SEVERALLY",
+        "JOINTLY_AND_SEVERALLY": "JOINTLY_AND_SEVERALLY"
+    },
+    "howreplacementattorneysact": {
+        "JOINTLY": "JOINTLY",
+        "SEVERALLY": "SEVERALLY",
+        "JOINTLY_AND_SEVERALLY": "JOINTLY_AND_SEVERALLY"
+    },
+    "howdeputyappointed": {
+        "SOLE": "SOLE",
+        "JOINT": "JOINT",
+        "JOINTANDSEVERALLY": "JOINTANDSEVERALLY"
+    },
+    "attorneyactdecisions": {
+        "When Registered": "When Registered",
+        "Loss of capacity": "Loss of capacity"
+    },
+    "replacementattorneyactdecisions": {
+        "When Registered": "When Registered",
+        "Loss of capacity": "Loss of capacity"
+    },
+    "orderstatus": {
+        "ACTIVE": "ACTIVE",
+        "DUPLICATE": "DUPLICATE",
+        "OPEN": "OPEN",
+        "CLOSED": "CLOSED"
+    },
+    "orderclosurereason": {
+        "CLIENT DECEASED": "CLIENT DECEASED",
+        "FULL ORDER EXPIRED": "FULL ORDER EXPIRED",
+        "ORDER REVOKED": "ORDER REVOKED",
+        "FUNDS EXHAUSTED": "FUNDS EXHAUSTED",
+        "CLIENT REGAINED CAPACITY": "CLIENT REGAINED CAPACITY",
+        "DEPUTY DISCHARGED": "DEPUTY DISCHARGED",
+        "DEPUTY DECEASED": "DEPUTY DECEASED",
+        "NO FURTHER PROCEEDINGS": "NO FURTHER PROCEEDINGS",
+        "OTHER": "OTHER"
+    },
+    "ordersubtype": {
+        "NEW DEPUTY": "NEW DEPUTY",
+        "INTERIM ORDER": "INTERIM ORDER",
+        "REPLACEMENT": "REPLACEMENT",
+        "SUPPLEMENTARY": "SUPPLEMENTARY",
+        "TENANCY": "TENANCY",
+        "TRUSTEE": "TRUSTEE",
+        "VARIATION": "VARIATION",
+        "DIRECTION": "DIRECTION",
+        "GUARDIANSHIP": "GUARDIANSHIP"
+    }
+}

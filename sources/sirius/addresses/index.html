@@ -21,7 +21,7 @@
 
     <link href="/assets/styles.css" rel="stylesheet">
     <script src="/assets/index.js" defer></script>
-    <title>Sirius Case Management - OPG Data Dictionary</title>
+    <title>Addresses Table - Sirius Case Management - OPG Data Dictionary</title>
   </head>
   <body class="govuk-template__body">
     <a href="#content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
@@ -189,12 +189,14 @@
     <div class="govuk-grid-column-full">
         
 
+
+
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
   
     
     <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="/">Data Dictionary</a>
+      <a class="govuk-breadcrumbs__link" href="/">Date Dictionary</a>
     </li>
     
   
@@ -204,54 +206,273 @@
     </li>
     
   
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/sources/sirius/addresses">Addresses</a>
+    </li>
+    
+  
   </ol>
 </div>
 
-<h1 class="govuk-heading-l">Sirius Case Management</h1>
-<p class="govuk-body-l">Sirius is the case management system of the OPG. </p>
-<p class="govuk-body">Tables referenced here:</p>
-<ul class="govuk-body">
 
-    
-    <li><a class="govuk-link" href="persons">persons</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="addresses">addresses</a></li>
-    
- 
-    
- 
-    
- 
-    
-    <li><a class="govuk-link" href="cases">cases</a></li>
-    
- 
-    
- 
-    
- 
-    
- 
-    
- 
-    
- 
-    
- 
-    
- 
-    
- 
-    
- 
- </ul>
+<h1 class="govuk-heading-l">Addresses Table - Sirius Case Management</h1>
+<p class="govuk-body-l"> Contains details of addresses associated with persons in the database</p>
+<p class="govuk-body"><strong>Stability:</strong> 
 
- <a href="/data/sirius.json"><abbr title="JavaScript Object Notation"><strong class="govuk-tag govuk-tag--orange">
+The addresses table is to be considered <strong>unstable</strong>  
+
+and likely to change due to ongoing development work .</p>
+
+<p class="govuk-body"><strong>Analytical Platform</strong> :  Yes </p>
+<p class="govuk-body"><strong>Alternative formats</strong> : <a href="/data/addresses.json"><abbr title="JavaScript Object Notation"><strong class="govuk-tag govuk-tag--orange">
   JSON
 </strong>
 </abbr></a>
+
+
+
+<table class="govuk-table govuk-!-font-size-16">
+      <caption class="govuk-table__caption govuk-table__caption--m">addresses table columns</caption>
+      <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+        <th scope="col"  class="govuk-table__header">
+            Column Name
+        </th>
+         <th scope="col"  class="govuk-table__header">
+            Column Type
+        </th>
+        <th scope="col"  class="govuk-table__header">
+            Character Maximum
+        </th>
+        <th scope="col"  class="govuk-table__header">
+            Is Nullable
+        </th>
+        <th scope="col"  class="govuk-table__header">
+            Default
+        </th>
+        <th scope="col"  class="govuk-table__header">
+        Constrained values
+        </th>
+
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            id
+        </td>
+        <td class="govuk-table__cell">
+            integer
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            NO
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            person_id
+        </td>
+        <td class="govuk-table__cell">
+            integer
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            address_lines
+        </td>
+        <td class="govuk-table__cell">
+            json
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            town
+        </td>
+        <td class="govuk-table__cell">
+            character varying
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            county
+        </td>
+        <td class="govuk-table__cell">
+            character varying
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            postcode
+        </td>
+        <td class="govuk-table__cell">
+            character varying
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            country
+        </td>
+        <td class="govuk-table__cell">
+            character varying
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            type
+        </td>
+        <td class="govuk-table__cell">
+            character varying
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+            Primary,<br>
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            isairmailrequired
+        </td>
+        <td class="govuk-table__cell">
+            boolean
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            casrecaddressnumber
+        </td>
+        <td class="govuk-table__cell">
+            integer
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+</table>     
+
+
+
+
 
     </div>
 </div>
