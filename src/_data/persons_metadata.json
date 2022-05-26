@@ -1,0 +1,6 @@
+{
+    "name":"persons",
+    "stability":"unstable",
+    "summary":" The persons table includes data on people within the Sirius system. It contains both LPA, Guardianship and Supervision data, as well as data relating to persons who are informed parties.",
+    "in_analytical_platform":true
+}
