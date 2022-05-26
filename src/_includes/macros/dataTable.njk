@@ -26,7 +26,9 @@
     {% for column in table.columns %}
     <tr>
         <th scope="row" class="govuk-table__header">
+            <a href="#column__{{ column.column_name }}" id="column__{{ column.column_name }}" class="heading-link">
             {{ column.column_name }}
+            </a>
         </td>
         <td class="govuk-table__cell">
             {{ column.data_type}}
