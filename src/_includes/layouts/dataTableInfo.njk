@@ -22,6 +22,7 @@
 }) }}
 
 <h1 class="govuk-heading-l">{{title}}</h1>
+{% if metadata %}
 <p class="govuk-body-l"> {{metadata.summary}}</p>
 <p class="govuk-body"><strong>Stability:</strong> 
 
@@ -34,7 +35,7 @@ and likely to change due to ongoing development work {% endif %}.</p>
   text: "JSON",
   classes: "govuk-tag--orange"
 }) }}</abbr></a>
-
+{% endif %}
 {{ dataTable(table, refdata, metadata)}} 
 
 
