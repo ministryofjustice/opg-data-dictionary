@@ -1,7 +1,7 @@
-{% macro dataTable(table, refdata_table) %}
+{% macro dataTable(table, table_refdata, table_metadata) %}
 
 <table class="govuk-table govuk-!-font-size-16">
-      <caption class="govuk-table__caption govuk-table__caption--m">{{table.name}} table columns</caption>
+      <caption class="govuk-table__caption govuk-table__caption--m">{{table_metadata.name}} table columns</caption>
       <thead class="govuk-table__head">
     <tr class="govuk-table__row">
         <th scope="col"  class="govuk-table__header">
@@ -23,7 +23,7 @@
         Constrained values
         </th>
 
-    {% for column in table.columns %}
+    {% for column in table %}
     <tr>
         <th scope="row" class="govuk-table__header">
             <a href="#column__{{ column.column_name }}" id="column__{{ column.column_name }}" class="heading-link">
@@ -43,7 +43,7 @@
             {{ column.column_default}}
         </td>
         <td class="govuk-table__cell">
-            {% for ref, refclass in refdata_table[column.column_name] %}
+            {% for ref, refclass in table_refdata[column.column_name] %}
             {{ ref }},<br>
             {% endfor %}
         </td>

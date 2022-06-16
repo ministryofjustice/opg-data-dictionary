@@ -15,27 +15,28 @@
       href: "/sources/sirius/"
     },
     {
-      text: table.name  | capitalize,
-      href: "/sources/sirius/"+table.name 
+      text: metadata.name  | capitalize,
+      href: "/sources/sirius/"+metadata.name 
     }
   ]
 }) }}
 
 <h1 class="govuk-heading-l">{{title}}</h1>
-<p class="govuk-body-l"> {{table.summary}}</p>
+{% if metadata %}
+<p class="govuk-body-l"> {{metadata.summary}}</p>
 <p class="govuk-body"><strong>Stability:</strong> 
 
-The {{table.name}} table is to be considered <strong>{{table.stability}}</strong> {% if table.stability=="unstable" %} 
+The {{metadata.name}} table is to be considered <strong>{{metadata.stability}}</strong> {% if table.stability=="unstable" %} 
 
 and likely to change due to ongoing development work {% endif %}.</p>
 
-<p class="govuk-body"><strong>Analytical Platform</strong> : {% if table.in_analytical_platform %} Yes {% else %} No{% endif %}</p>
-<p class="govuk-body"><strong>Alternative formats</strong> : <a href="/data/{{table.name}}.json"><abbr title="JavaScript Object Notation">{{ govukTag({
+<p class="govuk-body"><strong>Analytical Platform</strong> : {% if metadata.in_analytical_platform %} Yes {% else %} No{% endif %}</p>
+<p class="govuk-body"><strong>Alternative formats</strong> : <a href="/data/{{metadata.name}}.json"><abbr title="JavaScript Object Notation">{{ govukTag({
   text: "JSON",
   classes: "govuk-tag--orange"
 }) }}</abbr></a>
-
-{{ dataTable(table, refdata)}}
+{% endif %}
+{{ dataTable(table, refdata, metadata)}} 
 
 
 
