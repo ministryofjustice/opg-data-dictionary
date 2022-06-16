@@ -26,8 +26,8 @@
             "display": false
         },
         {
-            "name": "document",
-            "display": false
+            "name": "documents",
+            "display": true
         },
         {
             "name": "investigation",
