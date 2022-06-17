@@ -23,7 +23,7 @@
         },
         {
             "name": "complaints",
-            "display": false
+            "display": true
         },
         {
             "name": "documents",
@@ -56,6 +56,10 @@
         {
             "name": "warnings",
             "display": false
+        },
+        {
+            "name": "finance_invoice",
+            "display" : "true"
         }
     ]
 }

@@ -1,0 +1,27 @@
+{
+    "direction": {
+        "0": "Incoming",
+        "1": "Outgoing",
+        "2": "internal"
+    },
+    "documentsource": {
+        "SCAN": "Scanning",
+        "UPLOAD": "upload",
+        "DIGICOP": "Serve OPG / DigiCop",
+        "DIGIDEP": "Deputy Reporting Service",
+        "CORRESPONDENCE": "Correspondence",
+        "LIVELINK": "Livelink migration",
+        "MERIS": "Meris Migration"
+    },
+    "correspondence_type": {
+        "annual_report": "Opg\\Core\\Model\\Entity\\Document\\AnnualReport",
+        "incoming_document": "Opg\\Core\\Model\\Entity\\Document\\IncomingDocument",
+        "lodging_checklist": "Opg\\Core\\Model\\Entity\\Document\\LodgingChecklist",
+        "outgoing_document": "Opg\\Core\\Model\\Entity\\Document\\OutgoingDocument",
+        "imported_outgoing_document": "Opg\\Core\\Model\\Entity\\Document\\ImportedOutgoingDocument",
+        "internal_document": "Opg\\Core\\Model\\Entity\\Document\\InternalDocument"
+    },
+    "subtype":{
+        "multiple options from unclear source": "varying"
+    }
+}

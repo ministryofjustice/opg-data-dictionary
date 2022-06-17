@@ -1,0 +1,6 @@
+{
+    "name": "finance_invoice",
+    "stability": "unstable",
+    "summary": "Contains details of finance invoices associated with deputies in the database",
+    "in_analytical_platform": true
+}
