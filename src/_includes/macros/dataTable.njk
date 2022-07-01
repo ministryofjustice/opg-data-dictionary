@@ -44,7 +44,7 @@
         </td>
         <td class="govuk-table__cell">
             {% for ref, refclass in table_refdata[column.column_name] %}
-            {{ ref }},<br>
+            {% if is_number(ref) %}{{ref}} - {{refclass}}{% else %}{{ ref }}{% endif %},<br>
             {% endfor %}
         </td>
     </tr>

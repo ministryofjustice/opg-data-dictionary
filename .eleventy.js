@@ -13,6 +13,7 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addPlugin(pluginRss);
 
+    eleventyConfig.addNunjucksGlobal("is_number", (str) => { return !isNaN(str) })
 
     eleventyConfig.addFilter('log', value => {
         console.log(value)

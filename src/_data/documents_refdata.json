@@ -14,12 +14,12 @@
         "MERIS": "Meris Migration"
     },
     "correspondence_type": {
-        "annual_report": "Opg\\Core\\Model\\Entity\\Document\\AnnualReport",
-        "incoming_document": "Opg\\Core\\Model\\Entity\\Document\\IncomingDocument",
-        "lodging_checklist": "Opg\\Core\\Model\\Entity\\Document\\LodgingChecklist",
-        "outgoing_document": "Opg\\Core\\Model\\Entity\\Document\\OutgoingDocument",
-        "imported_outgoing_document": "Opg\\Core\\Model\\Entity\\Document\\ImportedOutgoingDocument",
-        "internal_document": "Opg\\Core\\Model\\Entity\\Document\\InternalDocument"
+        "annual_report": "Annual Report",
+        "incoming_document": "Incoming Document",
+        "lodging_checklist": "Lodging Checklist",
+        "outgoing_document": "Outgoing Document",
+        "imported_outgoing_document": "Imported OutgoingDocument",
+        "internal_document": "Internal Document"
     },
     "subtype":{
         "multiple options from unclear source": "varying"
