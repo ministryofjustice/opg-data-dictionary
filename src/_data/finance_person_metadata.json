@@ -1,0 +1,6 @@
+{
+    "name": "finance_person",
+    "stability": "unstable",
+    "summary": "Contains details of deputies who pay invoices in the database",
+    "in_analytical_platform": true
+}
