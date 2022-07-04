@@ -1,0 +1,6 @@
+{
+    "name": "investigation",
+    "stability": "unstable",
+    "summary": "Contains details of deputies who have investigations in the database",
+    "in_analytical_platform": true
+}

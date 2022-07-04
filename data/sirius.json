@@ -23,7 +23,7 @@
         },
         {
             "name": "complaints",
-            "display": false
+            "display": true
         },
         {
             "name": "documents",
@@ -56,6 +56,26 @@
         {
             "name": "warnings",
             "display": false
+        },
+        {
+            "name": "finance_invoice",
+            "display" : "true"
+        },
+        {
+            "name": "finance_order",
+            "display" : "true"
+        },
+        {
+            "name": "finance_person",
+            "display" : "true"
+        },
+        {
+            "name": "finance_remission_exemption",
+            "display" : "true"
+        },
+        {
+            "name": "investigation",
+            "display" : "true"
         }
     ]
 }
