@@ -92,6 +92,10 @@
         {
             "name" : "assignees",
             "display" : true
+        },
+        {
+            "name": "supervision_level_log",
+            "display": true
         }
     ]
 }
