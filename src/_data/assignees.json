@@ -1,0 +1,100 @@
+[
+  {
+    "column_name": "id",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "NO",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "parent_id",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "name",
+    "data_type": "character varying",
+    "column_default": null,
+    "is_nullable": "NO",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "type",
+    "data_type": "character varying",
+    "column_default": null,
+    "is_nullable": "NO",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "email",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "surname",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "roles",
+    "data_type": "json",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "suspended",
+    "data_type": "boolean",
+    "column_default": "false",
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "groupname",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "phonenumber",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "deleted",
+    "data_type": "timestamp without time zone",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "teamtype",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "updateddate",
+    "data_type": "timestamp without time zone",
+    "column_default": "NULL::timestamp without time zone",
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "permanent",
+    "data_type": "boolean",
+    "column_default": "false",
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  }
+]
