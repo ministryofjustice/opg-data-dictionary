@@ -1,0 +1,26 @@
+{
+    "status":{
+        "CATEGORY" : "reportStatus" ,
+        "PENDING" : "PENDING" ,
+        "DUE" : "DUE" ,
+        "OVERDUE" : "OVERDUE" ,
+        "NON_COMPLIANT" : "NON_COMPLIANT" ,
+        "RECEIVED" : "RECEIVED" ,
+        "LODGED" : "LODGED" ,
+        "ABANDONED" : "ABANDONED" ,
+        "INCOMPLETE" : "INCOMPLETE"
+    },
+    "reviewstatus":{
+        "CATEGORY" : "reportReviewStatus",
+        "NO_REVIEW" : "NO_REVIEW",
+        "RANDOM" : "RANDOM",
+        "STAFF_PRESELECTED" : "STAFF_PRESELECTED",
+        "STAFF_REFERRED" : "STAFF_REFERRED",
+        "REVIEWED" : "REVIEWED"
+    },
+    "reviewdecision":{
+        "NO_FURTHER_ACTION_REQUIRED" : "NO_FURTHER_ACTION_REQUIRED",
+        "FURTHER_CASE_WORK" : "FURTHER_CASE_WORK",
+        "CASE_ESCALATED" : "CASE_ESCALATED"
+    }
+}

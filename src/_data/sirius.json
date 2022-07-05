@@ -76,6 +76,10 @@
         {
             "name": "investigation",
             "display" : "true"
+        },
+        {
+            "name": "annual_report_logs",
+            "display":"true"
         }
     ]
 }
