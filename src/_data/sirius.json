@@ -96,6 +96,10 @@
         {
             "name": "supervision_level_log",
             "display": true
+        },
+        {
+            "name": "supervision_notes",
+            "display": true
         }
     ]
 }
