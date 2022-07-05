@@ -88,6 +88,10 @@
         {
             "name" : "annual_report_type_assignments",
             "display": true
+        },
+        {
+            "name" : "assignees",
+            "display" : true
         }
     ]
 }
