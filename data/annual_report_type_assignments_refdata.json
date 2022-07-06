@@ -1,0 +1,16 @@
+{
+    "reporttype" : {
+        "OPG102" : "OPG102",
+        "OPG103" : "OPG103",
+        "OPG104" : "OPG104"
+    },
+    "reporttypeoverride" : {
+        "OPG102" : "OPG102",
+        "OPG103" : "OPG103",
+        "OPG104" : "OPG104"
+    },
+    "type":{
+        "hw":"hw",
+        "pfa": "pfa"
+    }
+}

@@ -21,7 +21,7 @@
 
     <link href="/assets/styles.css" rel="stylesheet">
     <script src="/assets/index.js" defer></script>
-    <title>Documents Table - Sirius Case Management - OPG Data Dictionary</title>
+    <title>Supervision Notes Table - Sirius Case Management - OPG Data Dictionary</title>
   </head>
   <body class="govuk-template__body">
     <a href="#content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
@@ -210,7 +210,7 @@
   
     
     <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="/sources/sirius/documents">Documents</a>
+      <a class="govuk-breadcrumbs__link" href="/sources/sirius/supervision_notes">Supervision_notes</a>
     </li>
     
   
@@ -218,15 +218,15 @@
 </div>
 
 
-<h1 class="govuk-heading-l">Documents Table - Sirius Case Management</h1>
+<h1 class="govuk-heading-l">Supervision Notes Table - Sirius Case Management</h1>
 
-<p class="govuk-body-l"> Contains details of documents associated with persons in the database</p>
+<p class="govuk-body-l"> Notes relating to clients on deputyships</p>
 <p class="govuk-body"><strong>Stability:</strong> 
 
-The documents table is to be considered <strong>unstable</strong> .</p>
+The supervision_notes table is to be considered <strong>unstable</strong> .</p>
 
 <p class="govuk-body"><strong>Analytical Platform</strong> :  Yes </p>
-<p class="govuk-body"><strong>Alternative formats</strong> : <a href="/data/documents.json"><abbr title="JavaScript Object Notation"><strong class="govuk-tag govuk-tag--orange">
+<p class="govuk-body"><strong>Alternative formats</strong> : <a href="/data/supervision_notes.json"><abbr title="JavaScript Object Notation"><strong class="govuk-tag govuk-tag--orange">
   JSON
 </strong>
 </abbr></a>
@@ -234,7 +234,7 @@ The documents table is to be considered <strong>unstable</strong> .</p>
 
 
 <table class="govuk-table govuk-!-font-size-16">
-      <caption class="govuk-table__caption govuk-table__caption--m">documents table columns</caption>
+      <caption class="govuk-table__caption govuk-table__caption--m">supervision_notes table columns</caption>
       <thead class="govuk-table__head">
     <tr class="govuk-table__row">
         <th scope="col"  class="govuk-table__header">
@@ -282,31 +282,8 @@ The documents table is to be considered <strong>unstable</strong> .</p>
     
     <tr>
         <th scope="row" class="govuk-table__header">
-            <a href="#column__correspondent_id" id="column__correspondent_id" class="heading-link">
-            correspondent_id
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            integer
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__assignee_id" id="column__assignee_id" class="heading-link">
-            assignee_id
+            <a href="#column__person_id" id="column__person_id" class="heading-link">
+            person_id
             </a>
         </td>
         <td class="govuk-table__cell">
@@ -342,127 +319,6 @@ The documents table is to be considered <strong>unstable</strong> .</p>
             YES
         </td>
         <td class="govuk-table__cell">
-            NULL::character varying
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__friendlydescription" id="column__friendlydescription" class="heading-link">
-            friendlydescription
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            character varying
-        </td>
-        <td class="govuk-table__cell">
-            255
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            NULL::character varying
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__title" id="column__title" class="heading-link">
-            title
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            character varying
-        </td>
-        <td class="govuk-table__cell">
-            255
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            NULL::character varying
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__createddate" id="column__createddate" class="heading-link">
-            createddate
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            timestamp without time zone
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            NULL::timestamp without time zone
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__direction" id="column__direction" class="heading-link">
-            direction
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            integer
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            0
-        </td>
-        <td class="govuk-table__cell">
-            
-            0 - Incoming,<br>
-            
-            1 - Outgoing,<br>
-            
-            2 - internal,<br>
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__filename" id="column__filename" class="heading-link">
-            filename
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            text
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
             
         </td>
         <td class="govuk-table__cell">
@@ -472,8 +328,8 @@ The documents table is to be considered <strong>unstable</strong> .</p>
     
     <tr>
         <th scope="row" class="govuk-table__header">
-            <a href="#column__correspondence_type" id="column__correspondence_type" class="heading-link">
-            correspondence_type
+            <a href="#column__notetype" id="column__notetype" class="heading-link">
+            notetype
             </a>
         </td>
         <td class="govuk-table__cell">
@@ -490,65 +346,67 @@ The documents table is to be considered <strong>unstable</strong> .</p>
         </td>
         <td class="govuk-table__cell">
             
-            annual_report,<br>
+            EVENT_CREATED,<br>
             
-            incoming_document,<br>
+            TASK_CREATED,<br>
             
-            lodging_checklist,<br>
+            TASK_UPDATED,<br>
             
-            outgoing_document,<br>
+            TASK_COMPLETED,<br>
             
-            imported_outgoing_document,<br>
+            REPORT_ABANDONED,<br>
             
-            internal_document,<br>
+            REPORT_DUE_DATE_UPDATED,<br>
             
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__subtype" id="column__subtype" class="heading-link">
-            subtype
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            character varying
-        </td>
-        <td class="govuk-table__cell">
-            255
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            NULL::character varying
-        </td>
-        <td class="govuk-table__cell">
+            REPORT_LODGED,<br>
             
-            multiple options from unclear source,<br>
+            REPORT_REPORTING_PERIOD_CHANGED,<br>
             
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__sourcedocumenttype" id="column__sourcedocumenttype" class="heading-link">
-            sourcedocumenttype
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            character varying
-        </td>
-        <td class="govuk-table__cell">
-            255
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            NULL::character varying
-        </td>
-        <td class="govuk-table__cell">
+            REPORT_REVIEWED,<br>
+            
+            REPORT_OPG102_REQUESTED,<br>
+            
+            CLIENT_RISK_SCORE_RECORDED,<br>
+            
+            WARNING_CREATED,<br>
+            
+            REPORT_PRESELECTED,<br>
+            
+            DOCUMENT_REPLACED,<br>
+            
+            SUPERVISION_LEVEL_UPDATED,<br>
+            
+            DEATH_RECORDED,<br>
+            
+            ORDER_CREATED,<br>
+            
+            ORDER_UPDATED,<br>
+            
+            ORDER_STATUS_UPDATED,<br>
+            
+            IMPORTANT_COMMENTS,<br>
+            
+            GENERAL_COMMENTS,<br>
+            
+            MINOR_COMMENTS,<br>
+            
+            OBSERVATION,<br>
+            
+            VISITS,<br>
+            
+            HW_SPECIAL_CASE,<br>
+            
+            TELEPHONE_COMPLAINT,<br>
+            
+            BOND_PROVIDER_CHANGE,<br>
+            
+            ANNUAL_REPORTS,<br>
+            
+            FINANCE_TRACKING,<br>
+            
+            DEPUTY_DECEASED_DISCHARGED,<br>
+            
+            PANEL,<br>
             
         </td>
     </tr>
@@ -566,7 +424,7 @@ The documents table is to be considered <strong>unstable</strong> .</p>
             
         </td>
         <td class="govuk-table__cell">
-            YES
+            NO
         </td>
         <td class="govuk-table__cell">
             
@@ -578,8 +436,8 @@ The documents table is to be considered <strong>unstable</strong> .</p>
     
     <tr>
         <th scope="row" class="govuk-table__header">
-            <a href="#column__systemtype" id="column__systemtype" class="heading-link">
-            systemtype
+            <a href="#column__name" id="column__name" class="heading-link">
+            name
             </a>
         </td>
         <td class="govuk-table__cell">
@@ -601,348 +459,12 @@ The documents table is to be considered <strong>unstable</strong> .</p>
     
     <tr>
         <th scope="row" class="govuk-table__header">
-            <a href="#column__reportingperiod" id="column__reportingperiod" class="heading-link">
-            reportingperiod
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            character varying
-        </td>
-        <td class="govuk-table__cell">
-            255
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            NULL::character varying
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__additionalpagecount" id="column__additionalpagecount" class="heading-link">
-            additionalpagecount
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            integer
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__content" id="column__content" class="heading-link">
-            content
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            text
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__mimetype" id="column__mimetype" class="heading-link">
-            mimetype
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            character varying
-        </td>
-        <td class="govuk-table__cell">
-            255
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            NULL::character varying
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__receiveddatetime" id="column__receiveddatetime" class="heading-link">
-            receiveddatetime
+            <a href="#column__createdtime" id="column__createdtime" class="heading-link">
+            createdtime
             </a>
         </td>
         <td class="govuk-table__cell">
             timestamp without time zone
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            NULL::timestamp without time zone
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__replaceddate" id="column__replaceddate" class="heading-link">
-            replaceddate
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            timestamp without time zone
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            NULL::timestamp without time zone
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__createdby_id" id="column__createdby_id" class="heading-link">
-            createdby_id
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            integer
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__replacedby_id" id="column__replacedby_id" class="heading-link">
-            replacedby_id
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            integer
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__documentsource" id="column__documentsource" class="heading-link">
-            documentsource
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            character varying
-        </td>
-        <td class="govuk-table__cell">
-            255
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            NULL::character varying
-        </td>
-        <td class="govuk-table__cell">
-            
-            SCAN,<br>
-            
-            UPLOAD,<br>
-            
-            DIGICOP,<br>
-            
-            DIGIDEP,<br>
-            
-            CORRESPONDENCE,<br>
-            
-            LIVELINK,<br>
-            
-            MERIS,<br>
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__exportedtocasrec" id="column__exportedtocasrec" class="heading-link">
-            exportedtocasrec
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            boolean
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            false
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__publisheddate" id="column__publisheddate" class="heading-link">
-            publisheddate
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            timestamp without time zone
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            NULL::timestamp without time zone
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__publishedby_id" id="column__publishedby_id" class="heading-link">
-            publishedby_id
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            integer
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__deletedat" id="column__deletedat" class="heading-link">
-            deletedat
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            timestamp without time zone
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            NULL::timestamp without time zone
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__pagecount" id="column__pagecount" class="heading-link">
-            pagecount
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            integer
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__uuid" id="column__uuid" class="heading-link">
-            uuid
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            uuid
         </td>
         <td class="govuk-table__cell">
             
@@ -951,7 +473,7 @@ The documents table is to be considered <strong>unstable</strong> .</p>
             NO
         </td>
         <td class="govuk-table__cell">
-            uuid_generate_v4()
+            
         </td>
         <td class="govuk-table__cell">
             
@@ -960,21 +482,21 @@ The documents table is to be considered <strong>unstable</strong> .</p>
     
     <tr>
         <th scope="row" class="govuk-table__header">
-            <a href="#column__parent_uuid" id="column__parent_uuid" class="heading-link">
-            parent_uuid
+            <a href="#column__direction" id="column__direction" class="heading-link">
+            direction
             </a>
         </td>
         <td class="govuk-table__cell">
-            uuid
+            character varying
         </td>
         <td class="govuk-table__cell">
-            
+            255
         </td>
         <td class="govuk-table__cell">
             YES
         </td>
         <td class="govuk-table__cell">
-            
+            NULL::character varying
         </td>
         <td class="govuk-table__cell">
             
@@ -983,31 +505,8 @@ The documents table is to be considered <strong>unstable</strong> .</p>
     
     <tr>
         <th scope="row" class="govuk-table__header">
-            <a href="#column__metadata" id="column__metadata" class="heading-link">
-            metadata
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            jsonb
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__child_count" id="column__child_count" class="heading-link">
-            child_count
+            <a href="#column__createdbyuser_id" id="column__createdbyuser_id" class="heading-link">
+            createdbyuser_id
             </a>
         </td>
         <td class="govuk-table__cell">
@@ -1029,15 +528,15 @@ The documents table is to be considered <strong>unstable</strong> .</p>
     
     <tr>
         <th scope="row" class="govuk-table__header">
-            <a href="#column__groupname" id="column__groupname" class="heading-link">
-            groupname
+            <a href="#column__source_note_id" id="column__source_note_id" class="heading-link">
+            source_note_id
             </a>
         </td>
         <td class="govuk-table__cell">
-            character varying
+            integer
         </td>
         <td class="govuk-table__cell">
-            255
+            
         </td>
         <td class="govuk-table__cell">
             YES
@@ -1052,21 +551,21 @@ The documents table is to be considered <strong>unstable</strong> .</p>
     
     <tr>
         <th scope="row" class="govuk-table__header">
-            <a href="#column__notifyid" id="column__notifyid" class="heading-link">
-            notifyid
+            <a href="#column__source_task_id" id="column__source_task_id" class="heading-link">
+            source_task_id
             </a>
         </td>
         <td class="govuk-table__cell">
-            character varying
+            integer
         </td>
         <td class="govuk-table__cell">
-            255
+            
         </td>
         <td class="govuk-table__cell">
             YES
         </td>
         <td class="govuk-table__cell">
-            NULL::character varying
+            
         </td>
         <td class="govuk-table__cell">
             
@@ -1075,21 +574,21 @@ The documents table is to be considered <strong>unstable</strong> .</p>
     
     <tr>
         <th scope="row" class="govuk-table__header">
-            <a href="#column__notifystatus" id="column__notifystatus" class="heading-link">
-            notifystatus
+            <a href="#column__source_annualreportlog_id" id="column__source_annualreportlog_id" class="heading-link">
+            source_annualreportlog_id
             </a>
         </td>
         <td class="govuk-table__cell">
-            character varying
+            integer
         </td>
         <td class="govuk-table__cell">
-            30
+            
         </td>
         <td class="govuk-table__cell">
             YES
         </td>
         <td class="govuk-table__cell">
-            NULL::character varying
+            
         </td>
         <td class="govuk-table__cell">
             
@@ -1098,8 +597,100 @@ The documents table is to be considered <strong>unstable</strong> .</p>
     
     <tr>
         <th scope="row" class="govuk-table__header">
-            <a href="#column__task_id" id="column__task_id" class="heading-link">
-            task_id
+            <a href="#column__source_deathnotification_id" id="column__source_deathnotification_id" class="heading-link">
+            source_deathnotification_id
+            </a>
+        </td>
+        <td class="govuk-table__cell">
+            integer
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            <a href="#column__source_document_id" id="column__source_document_id" class="heading-link">
+            source_document_id
+            </a>
+        </td>
+        <td class="govuk-table__cell">
+            integer
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            <a href="#column__source_warning_id" id="column__source_warning_id" class="heading-link">
+            source_warning_id
+            </a>
+        </td>
+        <td class="govuk-table__cell">
+            integer
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            <a href="#column__source_clientriskscore_id" id="column__source_clientriskscore_id" class="heading-link">
+            source_clientriskscore_id
+            </a>
+        </td>
+        <td class="govuk-table__cell">
+            integer
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            <a href="#column__source_order_id" id="column__source_order_id" class="heading-link">
+            source_order_id
             </a>
         </td>
         <td class="govuk-table__cell">

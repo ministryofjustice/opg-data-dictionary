@@ -1,0 +1,11 @@
+{
+    "supervisionlevel":{
+        "GENERAL":"GENERAL",
+        "MINIMAL":"MINIMAL"
+    },
+    "assetlevel": {
+        "HIGH":"HIGH",
+        "LOW":"LOW",
+        "UNKNOWN":"UNKNOWN"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "name": "annual_report_logs",
+    "stability": "unstable",
+    "summary": "Contains details of annual reports associated with deputies",
+    "in_analytical_platform": true
+}

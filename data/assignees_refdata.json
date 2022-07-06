@@ -1,0 +1,21 @@
+{
+    "type":{
+        "assignee_team":"assignee_team",
+        "assignee_user":"assignee_user",
+        "assignee_machine":"assignee_machine",
+        "assignee_null":"assignee_null"
+    },
+    "teamtype":{
+        "ALLOCATIONS" : "ALLOCATIONS" ,
+        "COMPLAINTS" : "COMPLAINTS" ,
+        "CORPORATE" : "CORPORATE" ,
+        "FINANCE" : "FINANCE" ,
+        "HW" : "HW" ,
+        "INVESTIGATIONS" : "INVESTIGATIONS" ,
+        "LAY" : "LAY" ,
+        "NOT_APPROPRIATE" : "NOT_APPROPRIATE" ,
+        "PA" : "PA" ,
+        "PRO" : "PRO" ,
+        "VISITS" : "VISITS" 
+    }
+}

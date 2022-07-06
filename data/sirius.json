@@ -59,23 +59,47 @@
         },
         {
             "name": "finance_invoice",
-            "display" : "true"
+            "display" : true
         },
         {
             "name": "finance_order",
-            "display" : "true"
+            "display" : true
         },
         {
             "name": "finance_person",
-            "display" : "true"
+            "display" : true
         },
         {
             "name": "finance_remission_exemption",
-            "display" : "true"
+            "display" : true
         },
         {
             "name": "investigation",
-            "display" : "true"
+            "display" : true
+        },
+        {
+            "name": "annual_report_logs",
+            "display":true
+        },
+        {
+            "name": "annual_report_lodging_details",
+            "display" : true
+        },
+        {
+            "name" : "annual_report_type_assignments",
+            "display": true
+        },
+        {
+            "name" : "assignees",
+            "display" : true
+        },
+        {
+            "name": "supervision_level_log",
+            "display": true
+        },
+        {
+            "name": "supervision_notes",
+            "display": true
         }
     ]
 }

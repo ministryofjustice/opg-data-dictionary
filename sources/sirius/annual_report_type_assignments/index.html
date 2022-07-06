@@ -21,7 +21,7 @@
 
     <link href="/assets/styles.css" rel="stylesheet">
     <script src="/assets/index.js" defer></script>
-    <title>Sirius Case Management - OPG Data Dictionary</title>
+    <title>Annual Report Type Assignemnts Table - Sirius Case Management - OPG Data Dictionary</title>
   </head>
   <body class="govuk-template__body">
     <a href="#content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
@@ -189,12 +189,16 @@
     <div class="govuk-grid-column-full">
         
 
+
+
+
+
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
   
     
     <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="/">Data Dictionary</a>
+      <a class="govuk-breadcrumbs__link" href="/">Date Dictionary</a>
     </li>
     
   
@@ -204,102 +208,191 @@
     </li>
     
   
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/sources/sirius/annual_report_type_assignments">Annual_report_type_assignments</a>
+    </li>
+    
+  
   </ol>
 </div>
 
-<h1 class="govuk-heading-l">Sirius Case Management</h1>
-<p class="govuk-body-l">Sirius is the case management system of the OPG. </p>
-<p class="govuk-body">Tables referenced here:</p>
-<ul class="govuk-body">
 
-    
-    <li><a class="govuk-link" href="persons">persons</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="addresses">addresses</a></li>
-    
- 
-    
- 
-    
- 
-    
-    <li><a class="govuk-link" href="cases">cases</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="complaints">complaints</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="documents">documents</a></li>
-    
- 
-    
- 
-    
- 
-    
- 
-    
- 
-    
- 
-    
- 
-    
- 
-    
-    <li><a class="govuk-link" href="finance_invoice">finance_invoice</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="finance_order">finance_order</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="finance_person">finance_person</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="finance_remission_exemption">finance_remission_exemption</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="investigation">investigation</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="annual_report_logs">annual_report_logs</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="annual_report_lodging_details">annual_report_lodging_details</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="annual_report_type_assignments">annual_report_type_assignments</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="assignees">assignees</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="supervision_level_log">supervision_level_log</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="supervision_notes">supervision_notes</a></li>
-    
- 
- </ul>
+<h1 class="govuk-heading-l">Annual Report Type Assignemnts Table - Sirius Case Management</h1>
 
- <a href="/data/sirius.json"><abbr title="JavaScript Object Notation"><strong class="govuk-tag govuk-tag--orange">
+<p class="govuk-body-l"> Contains details of annual reports types associated with deputies</p>
+<p class="govuk-body"><strong>Stability:</strong> 
+
+The annual_report_type_assignments table is to be considered <strong>unstable</strong> .</p>
+
+<p class="govuk-body"><strong>Analytical Platform</strong> :  Yes </p>
+<p class="govuk-body"><strong>Alternative formats</strong> : <a href="/data/annual_report_type_assignments.json"><abbr title="JavaScript Object Notation"><strong class="govuk-tag govuk-tag--orange">
   JSON
 </strong>
 </abbr></a>
+
+
+
+<table class="govuk-table govuk-!-font-size-16">
+      <caption class="govuk-table__caption govuk-table__caption--m">annual_report_type_assignments table columns</caption>
+      <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+        <th scope="col"  class="govuk-table__header">
+            Column Name
+        </th>
+         <th scope="col"  class="govuk-table__header">
+            Column Type
+        </th>
+        <th scope="col"  class="govuk-table__header">
+            Character Maximum
+        </th>
+        <th scope="col"  class="govuk-table__header">
+            Is Nullable
+        </th>
+        <th scope="col"  class="govuk-table__header">
+            Default
+        </th>
+        <th scope="col"  class="govuk-table__header">
+        Constrained values
+        </th>
+
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            <a href="#column__id" id="column__id" class="heading-link">
+            id
+            </a>
+        </td>
+        <td class="govuk-table__cell">
+            integer
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            NO
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            <a href="#column__reporttype" id="column__reporttype" class="heading-link">
+            reporttype
+            </a>
+        </td>
+        <td class="govuk-table__cell">
+            character varying
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+            OPG102,<br>
+            
+            OPG103,<br>
+            
+            OPG104,<br>
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            <a href="#column__reporttypeoverride" id="column__reporttypeoverride" class="heading-link">
+            reporttypeoverride
+            </a>
+        </td>
+        <td class="govuk-table__cell">
+            character varying
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::character varying
+        </td>
+        <td class="govuk-table__cell">
+            
+            OPG102,<br>
+            
+            OPG103,<br>
+            
+            OPG104,<br>
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            <a href="#column__type" id="column__type" class="heading-link">
+            type
+            </a>
+        </td>
+        <td class="govuk-table__cell">
+            character varying
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            NO
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+            hw,<br>
+            
+            pfa,<br>
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            <a href="#column__annualreport_id" id="column__annualreport_id" class="heading-link">
+            annualreport_id
+            </a>
+        </td>
+        <td class="govuk-table__cell">
+            integer
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+</table>     
+ 
+
+
+
 
     </div>
 </div>
