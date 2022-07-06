@@ -1,0 +1,6 @@
+{
+    "name":"supervision_level_log",
+    "stability":"unstable",
+    "summary":"The historic supervision level log for deputies",
+    "in_analytical_platform":true
+}

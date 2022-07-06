@@ -1,0 +1,6 @@
+{
+    "name": "annual_report_type_assignments",
+    "stability": "unstable",
+    "summary": "Contains details of annual reports types associated with deputies",
+    "in_analytical_platform": true
+}

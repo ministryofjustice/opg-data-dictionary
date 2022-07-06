@@ -1,0 +1,135 @@
+[
+  {
+    "column_name": "id",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "NO",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "client_id",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "visittype",
+    "data_type": "character varying",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "visitduedate",
+    "data_type": "timestamp without time zone",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "visitcreateddate",
+    "data_type": "timestamp without time zone",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "visitreportduedate",
+    "data_type": "timestamp without time zone",
+    "column_default": "NULL::timestamp without time zone",
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "visitoutcome",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "visitcompleteddate",
+    "data_type": "timestamp without time zone",
+    "column_default": "NULL::timestamp without time zone",
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "visitreportreceiveddate",
+    "data_type": "timestamp without time zone",
+    "column_default": "NULL::timestamp without time zone",
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "visitreportmarkedas",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "visitreportrevieweddate",
+    "data_type": "timestamp without time zone",
+    "column_default": "NULL::timestamp without time zone",
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "visitvisitorallocated",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "visitcancellationreason",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "visitcommissiondate",
+    "data_type": "timestamp without time zone",
+    "column_default": "NULL::timestamp without time zone",
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "firstextendedvisitreportduedate",
+    "data_type": "timestamp without time zone",
+    "column_default": "NULL::timestamp without time zone",
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "secondextendedvisitreportduedate",
+    "data_type": "timestamp without time zone",
+    "column_default": "NULL::timestamp without time zone",
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "visitsubtype",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "visiturgency",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "whotovisit",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  }
+]

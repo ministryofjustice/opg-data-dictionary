@@ -199,7 +199,7 @@
     "column_name": "uuid",
     "data_type": "uuid",
     "column_default": "uuid_generate_v4()",
-    "is_nullable": "YES",
+    "is_nullable": "NO",
     "character_maximum_length": null
   },
   {
