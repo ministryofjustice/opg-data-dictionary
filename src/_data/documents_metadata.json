@@ -1,6 +1,0 @@
-{
-    "name": "documents",
-    "stability": "unstable",
-    "summary": "Contains details of documents associated with persons in the database",
-    "in_analytical_platform": true
-}
