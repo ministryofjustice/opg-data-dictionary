@@ -1,6 +1,0 @@
-{
-    "name":"complaints",
-    "stability":"stable",
-    "summary":"Contains details of customer complaints",
-    "in_analytical_platform":true
-}

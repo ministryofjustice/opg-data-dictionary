@@ -1,6 +1,0 @@
-{
-    "name": "finance_order",
-    "stability": "stable",
-    "summary": "Contains details of order fnance information for deputies",
-    "in_analytical_platform": true
-}

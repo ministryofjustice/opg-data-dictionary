@@ -1,6 +1,0 @@
-{
-    "name": "assignees",
-    "stability": "unstable",
-    "summary": "Contains details of teams and users assigned to cases",
-    "in_analytical_platform": true
-}
