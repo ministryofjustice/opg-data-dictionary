@@ -1,105 +1,149 @@
 {
     "name": "Sirius Case Management",
-    "tables": [
-        {
-            "name": "persons",
-            "display": true
+    "tables": {
+        "persons": {
+            "display": true,
+            "name":"persons",
+            "stability":"unstable",
+            "summary":" The persons table includes data on people within the Sirius system. It contains both LPA, Guardianship and Supervision data, as well as data relating to persons who are informed parties.",
+            "in_analytical_platform":true
         },
-        {
+        "addresses": {
             "name": "addresses",
-            "display": true
+            "display": true,
+            "stability": "unstable",
+            "summary": "Contains details of addresses associated with persons in the database",
+            "in_analytical_platform": true
         },
-        {
+        "caseitem_document": {
             "name": "caseitem_document",
             "display": false
         },
-        {
+        "caseitem_warning": {
             "name": "caseitem_warning",
             "display": false
         },
-        {
+        "cases": {
             "name": "cases",
-            "display": true
+            "display": true,
+            "stability":"unstable",
+            "summary":"Contains details of LPA, Supervision and Guardianship cases",
+            "in_analytical_platform":true
         },
-        {
+        "complaints": {
             "name": "complaints",
-            "display": true
+            "display": true,
+            "stability":"stable",
+            "summary":"Contains details of customer complaints",
+            "in_analytical_platform":true
         },
-        {
+        "documents": {
             "name": "documents",
-            "display": true
+            "display": true,
+            "stability": "unstable",
+            "summary": "Contains details of documents associated with persons in the database",
+            "in_analytical_platform": true
         },
-        {
-            "name": "investigation",
-            "display": false
-        },
-        {
+        "pa_applicants": {
             "name": "pa_applicants",
             "display": false
         },
-        {
+        "person_caseitem": {
             "name": "person_caseitem",
             "display": false
         },
-        {
+        "person_research_preferences": {
             "name": "person_research_preferences",
             "display": false
         },
-        {
+        "person_warning”": {
             "name": "person_warning”",
             "display": false
         },
-        {
+        "person_document": {
             "name": "person_document",
             "display": false
         },
-        {
+        "warnings": {
             "name": "warnings",
             "display": false
         },
-        {
+        "finance_invoice": {
             "name": "finance_invoice",
-            "display" : true
+            "display": true,
+            "stability": "unstable",
+            "summary": "Contains details of finance invoices associated with deputies in the database",
+            "in_analytical_platform": true
         },
-        {
+        "finance_order": {
             "name": "finance_order",
-            "display" : true
+            "display": true,
+            "stability": "stable",
+            "summary": "Contains details of order fnance information for deputies",
+            "in_analytical_platform": true
         },
-        {
+        "finance_person": {
             "name": "finance_person",
-            "display" : true
+            "display": true,
+            "stability": "unstable",
+            "summary": "Contains details of deputies who pay invoices in the database",
+            "in_analytical_platform": true
         },
-        {
+        "finance_remission_exemption": {
             "name": "finance_remission_exemption",
-            "display" : true
+            "display": true,
+            "stability": "unstable",
+            "summary": "Contains details of deputies who have fee reductions or exemptions in the database",
+            "in_analytical_platform": true
         },
-        {
+        "investigation": {
             "name": "investigation",
-            "display" : true
+            "display": true,
+            "stability": "unstable",
+            "summary": "Contains details of deputies who have investigations in the database",
+            "in_analytical_platform": true
         },
-        {
+        "annual_report_logs": {
             "name": "annual_report_logs",
-            "display":true
+            "display": true,
+            "stability": "unstable",
+            "summary": "Contains details of annual reports associated with deputies",
+            "in_analytical_platform": true
         },
-        {
+        "annual_report_lodging_details": {
             "name": "annual_report_lodging_details",
-            "display" : true
+            "display": true,
+            "stability": "unstable",
+            "summary": "Contains details of annual reports lodging associated with deputies",
+            "in_analytical_platform": true
         },
-        {
-            "name" : "annual_report_type_assignments",
-            "display": true
+        "annual_report_type_assignments": {
+            "name": "annual_report_type_assignments",
+            "display": true,
+            "stability": "unstable",
+            "summary": "Contains details of annual reports types associated with deputies",
+            "in_analytical_platform": true
         },
-        {
-            "name" : "assignees",
-            "display" : true
+        "assignees": {
+            "name": "assignees",
+            "display": true,
+            "stability": "unstable",
+            "summary": "Contains details of teams and users assigned to cases",
+            "in_analytical_platform": true
         },
-        {
+        "supervision_level_log": {
             "name": "supervision_level_log",
-            "display": true
+            "display": true,
+            "stability":"unstable",
+            "summary":"The historic supervision level log for deputies",
+            "in_analytical_platform":true
         },
-        {
+        "supervision_notes": {
             "name": "supervision_notes",
-            "display": true
+            "display": true,
+            "stability":"unstable",
+            "summary":"Notes relating to clients on deputyships",
+            "in_analytical_platform":true
         }
-    ]
+    }
 }

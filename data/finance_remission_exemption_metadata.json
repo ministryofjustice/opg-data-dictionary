@@ -1,6 +1,0 @@
-{
-    "name": "finance_remission_exemption",
-    "stability": "unstable",
-    "summary": "Contains details of deputies who have fee reductions or exemptions in the database",
-    "in_analytical_platform": true
-}
