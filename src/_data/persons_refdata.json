@@ -72,7 +72,8 @@
         "TRUST": "Trust Companies (Not NHS/PCT)",
         "OTHERPROFESSIONAL": "Other Professional",
         "LOCAL": "Local Authority",
-        "NHS": "NHS Trust"
+        "NHS": "NHS Trust",
+        "PCT": "PCT"
     },
     "clientaccommodation":{
         "NO ACCOMMODATION TYPE" : "NO ACCOMMODATION TYPE",
