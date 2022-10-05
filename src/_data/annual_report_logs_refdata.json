@@ -22,5 +22,9 @@
         "NO_FURTHER_ACTION_REQUIRED" : "NO_FURTHER_ACTION_REQUIRED",
         "FURTHER_CASE_WORK" : "FURTHER_CASE_WORK",
         "CASE_ESCALATED" : "CASE_ESCALATED"
+    },
+    "casesupervisionlevel":{
+        "GENERAL": "GENERAL",
+        "MINIMAL": "MINIMAL"
     }
 }
