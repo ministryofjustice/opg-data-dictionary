@@ -54,5 +54,12 @@
     "column_default": "false",
     "is_nullable": "NO",
     "character_maximum_length": null
+  },
+  {
+    "column_name": "datereceived",
+    "data_type": "date",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
   }
 ]
