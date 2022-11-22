@@ -131,5 +131,12 @@
     "column_default": "NULL::character varying",
     "is_nullable": "YES",
     "character_maximum_length": 255
+  },
+  {
+    "column_name": "visitassurancedecision",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
   }
 ]

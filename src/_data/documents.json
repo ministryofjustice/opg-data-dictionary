@@ -14,13 +14,6 @@
     "character_maximum_length": null
   },
   {
-    "column_name": "assignee_id",
-    "data_type": "integer",
-    "column_default": null,
-    "is_nullable": "YES",
-    "character_maximum_length": null
-  },
-  {
     "column_name": "type",
     "data_type": "character varying",
     "column_default": "NULL::character varying",
