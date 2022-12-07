@@ -28,5 +28,6 @@ jobs:
         run: |
           cd ./data-dictionary
           cp ../source-data/* ./src/_data/
-          git status
+          echo "Changed files:" >> $GITHUB_STEP_SUMMARY
+          git status -s >> $GITHUB_STEP_SUMMARY
           npm run build
