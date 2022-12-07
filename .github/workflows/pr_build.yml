@@ -7,7 +7,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Pull source data
+      - name: Pull Sirius Source data
         env:
           GITHUB_TOKEN:  ${{ secrets.ORG_ACCESS_TOKEN }}
         run: |
@@ -28,6 +28,6 @@ jobs:
         run: |
           cd ./data-dictionary
           cp ../source-data/* ./src/_data/
-          echo "Changed files:" >> $GITHUB_STEP_SUMMARY
+          echo "**Changed files pulled from Sirius data definitions:**" >> $GITHUB_STEP_SUMMARY
           git status -s >> $GITHUB_STEP_SUMMARY
           npm run build
