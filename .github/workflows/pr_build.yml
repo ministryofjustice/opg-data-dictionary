@@ -7,14 +7,6 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      # - name: Checkout
-      #   uses: actions/checkout@v2.3.1
-
-      # - name: Install and Build
-      #   run: |
-      #     npm install
-      #     npm run build
-
       - name: Pull source data
         env:
           GITHUB_TOKEN:  ${{ secrets.ORG_ACCESS_TOKEN }}
@@ -22,3 +14,12 @@ jobs:
           mkdir ./source-data
           gh run download -n data-dictionary-json  -R ministryofjustice/opg-sirius -D ./source-data
           ls -la ./source-data
+
+      - name: Checkout
+        uses: actions/checkout@v2.3.1
+
+      - name: Install and Build
+        run: |
+          npm install
+          cp ./source-data/* ./src/
+          npm run build
