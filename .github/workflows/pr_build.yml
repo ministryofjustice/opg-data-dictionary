@@ -26,6 +26,7 @@ jobs:
 
       - name: Build    
         run: |
+          cd ./data-dictionary
           cp ../source-data/* ./src/
           git status
           npm run build
