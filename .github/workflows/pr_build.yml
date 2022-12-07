@@ -19,6 +19,4 @@ jobs:
         env:
           GITHUB_TOKEN:  ${{ secrets.ORG_ACCESS_TOKEN }}
         run: |
-          gh api \
-          -H "Accept: application/vnd.github+json" \
-          /repos/ministryofjustice/opg-sirius/actions/artifacts  
+          gh run download -n data-dictionary-json  -R ministryofjustice/opg-sirius 
