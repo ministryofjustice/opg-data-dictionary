@@ -21,6 +21,6 @@ jobs:
           github_token: ${{secrets.ORG_ACCESS_TOKEN}}
           repo: ministryofjustice/opg-sirius
           branch: master
+          event: push
           name: data-dictionary-json
           search_artifacts: true
-          path: ./
