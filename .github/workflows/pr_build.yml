@@ -19,9 +19,13 @@ jobs:
         with: 
           path: 'data-dictionary'
 
-      - name: Install and Build
+      - name: Install
         run: |
           cd ./data-dictionary
           npm install
+
+      - name: Build    
+        run: |
           cp ../source-data/* ./src/
+          git status
           npm run build
