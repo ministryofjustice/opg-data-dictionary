@@ -13,13 +13,15 @@ jobs:
         run: |
           mkdir ./source-data
           gh run download -n data-dictionary-json  -R ministryofjustice/opg-sirius -D ./source-data
-          ls -la ./source-data
 
       - name: Checkout
         uses: actions/checkout@v2.3.1
+        with: 
+          path: 'data-dictionary'
 
       - name: Install and Build
         run: |
+          cd ./data-dictionary
           npm install
-          cp ./source-data/* ./src/
+          cp ../source-data/* ./src/
           npm run build
