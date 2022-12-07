@@ -19,4 +19,5 @@ jobs:
         env:
           GITHUB_TOKEN:  ${{ secrets.ORG_ACCESS_TOKEN }}
         run: |
-          gh run download -n data-dictionary-json  -R ministryofjustice/opg-sirius 
+          gh run download -n data-dictionary-json  -R ministryofjustice/opg-sirius
+          ls -la 
