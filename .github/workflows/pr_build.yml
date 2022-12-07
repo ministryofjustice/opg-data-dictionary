@@ -16,13 +16,11 @@ jobs:
           npm run build
 
       - name: Pull source data
-        uses: actions/download-artifact@v3
+        uses: dawidd6/action-download-artifact@v2
         with:
           github_token: ${{secrets.ORG_ACCESS_TOKEN}}
           repo: ministryofjustice/opg-sirius
           branch: master
           name: data-dictionary-json
           search_artifacts: true
-
-      - name: Display structure of downloaded files
-        run: ls -R
+          path: ./
