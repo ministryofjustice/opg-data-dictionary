@@ -23,4 +23,3 @@ jobs:
           branch: master
           event: push
           name: data-dictionary-json
-          search_artifacts: true
