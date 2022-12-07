@@ -22,4 +22,4 @@ jobs:
           repo: ministryofjustice/opg-sirius
           branch: master
           event: push
-          name: data-dictionary-json
+          name: "data-dictionary-json"
