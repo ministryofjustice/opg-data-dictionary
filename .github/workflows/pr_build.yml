@@ -7,32 +7,10 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Pull Sirius Source data
-        env:
-          GITHUB_TOKEN:  ${{ secrets.ORG_ACCESS_TOKEN }}
-        run: |
-          mkdir ./source-data
-          gh run download -n data-dictionary-json  -R ministryofjustice/opg-sirius -D ./source-data
-
       - name: Checkout
         uses: actions/checkout@v2.3.1
-        with: 
-          path: 'data-dictionary'
 
-      - name: Install
+      - name: Install and Build
         run: |
-          cd ./data-dictionary
           npm install
-
-      - name: Build    
-        run: |
-          cd ./data-dictionary
-          cp ../source-data/* ./src/_data/
-          echo "**Changed files pulled from Sirius data definitions:**" >> $GITHUB_STEP_SUMMARY
-          git status -s >> $GITHUB_STEP_SUMMARY
-          git config --global user.email "tools@digital.justice.gov.uk"
-          git config --global user.name "Github Action"
-          git add ./src/_data/
-          git commit -m "Added in files from Sirius data dictionary"
-          git push origin
           npm run build
