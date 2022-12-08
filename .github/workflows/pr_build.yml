@@ -30,4 +30,9 @@ jobs:
           cp ../source-data/* ./src/_data/
           echo "**Changed files pulled from Sirius data definitions:**" >> $GITHUB_STEP_SUMMARY
           git status -s >> $GITHUB_STEP_SUMMARY
+          git config --global user.email "tools@digital.justice.gov.uk"
+          git config --global user.name "Github Action"
+          git add ./src/_data/
+          git commit -m "Added in files from Sirius data dictionary"
+          
           npm run build
