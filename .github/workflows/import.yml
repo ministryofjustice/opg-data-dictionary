@@ -1,7 +1,7 @@
 name: Import Data from Sirius
 on:
   schedule:
-    - '0 0 7 ? * MON-FRI *'
+    - '0 7 * * 1-5'
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
