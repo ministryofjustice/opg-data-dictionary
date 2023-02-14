@@ -12,7 +12,7 @@
   "author": "Matt Machell",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy": "^2.0.0",
     "dayjs": "^1.11.0",
     "govuk-frontend": "^4.0.1",
     "sass": "^1.49.9"
