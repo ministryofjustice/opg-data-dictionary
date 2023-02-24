@@ -1,6 +1,6 @@
-# OPG Date Dictionary
+# OPG Data Dictionary
 
-OPG Date Dictionary: Managed by opg-org-infra &amp; Terraform
+OPG Data Dictionary: Managed by opg-org-infra &amp; Terraform
 
 This is a prototype of a data dictionary website for the Office of the Public Guardian (OPG).
 
