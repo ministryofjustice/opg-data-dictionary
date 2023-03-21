@@ -82,5 +82,47 @@
     "column_default": "NULL::timestamp without time zone",
     "is_nullable": "YES",
     "character_maximum_length": null
+  },
+  {
+    "column_name": "investigatingofficer",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "complainantcategory",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "origin",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "compensationtype",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "compensationamount",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "complainantname",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
   }
 ]

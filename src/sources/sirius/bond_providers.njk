@@ -1,0 +1,9 @@
+---
+title: Bond Providers Table - Sirius Case Management
+layout: layouts/fullwidth.njk
+---
+{% set table = bond_providers %}
+{% set refdata = bond_providers_refdata %}
+{% set metadata = sirius.tables.bond_providers %}
+
+{% include "../../_includes/layouts/dataTableInfo.njk" %}
