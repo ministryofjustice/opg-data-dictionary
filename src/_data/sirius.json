@@ -144,6 +144,20 @@
             "stability":"unstable",
             "summary":"Notes relating to clients on deputyships",
             "in_analytical_platform":true
+        },
+        "bonds": {
+            "name": "bonds",
+            "display": true,
+            "stability":"unstable",
+            "summary":"Bonds relating to clients on deputyships",
+            "in_analytical_platform":true
+        },
+        "bond_providers": {
+            "name": "bond_providers",
+            "display": true,
+            "stability":"unstable",
+            "summary":"Providers of Bonds associated with clients on deputyships",
+            "in_analytical_platform":true
         }
     }
 }
