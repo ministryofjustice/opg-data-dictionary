@@ -8,7 +8,7 @@ layout: layouts//source.njk
 <p class="govuk-body-l">Sirius is the case management system of the OPG. </p>
 <p class="govuk-body">Tables referenced here:</p>
 <ul class="govuk-body">
-{% for key, table in sirius.tables %}
+{% for key, table in sirius.tables | keySort %}
     {% if table.display %}
     <li><a class="govuk-link" href="{{ table.name }}">{{ table.name }}</a></li>
     {% endif %}

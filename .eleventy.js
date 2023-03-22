@@ -1,5 +1,6 @@
 const dateFilter = require('./src/filters/date-filter.js');
 const date24HourFilter = require('./src/filters/date24Hours-filter.js');
+const keySort = require('./src/filters/key-sort.js');
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ 'node_modules/govuk-frontend/govuk/assets': 'assets' })
@@ -18,6 +19,7 @@ module.exports = function (eleventyConfig) {
     
     eleventyConfig.addFilter('dateFilter', dateFilter);
     eleventyConfig.addFilter('date24HourFilter', date24HourFilter);
+    eleventyConfig.addFilter('keySort', keySort);
 
     return {
         dir: { input: 'src', output: '_site', data: '_data' },
