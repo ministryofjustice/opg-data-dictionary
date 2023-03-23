@@ -1,0 +1,9 @@
+---
+title: Tasks Table - Sirius Case Management
+layout: layouts/fullwidth.njk
+---
+{% set table = tasks %}
+{% set refdata = tasks_refdata %}
+{% set metadata = sirius.tables.tasks %}
+
+{% include "../../_includes/layouts/dataTableInfo.njk" %}

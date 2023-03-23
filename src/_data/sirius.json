@@ -128,7 +128,7 @@
             "name": "assignees",
             "display": true,
             "stability": "unstable",
-            "summary": "Contains details of teams and users assigned to cases",
+            "summary": "Contains details of teams and users who can be assigned to cases or tasks",
             "in_analytical_platform": true
         },
         "supervision_level_log": {
@@ -157,6 +157,13 @@
             "display": true,
             "stability":"unstable",
             "summary":"Providers of Bonds associated with clients on deputyships",
+            "in_analytical_platform":true
+        },
+        "tasks": {
+            "name": "tasks",
+            "display": true,
+            "stability":"unstable",
+            "summary":"Tasks assigned to users and teams",
             "in_analytical_platform":true
         }
     }
