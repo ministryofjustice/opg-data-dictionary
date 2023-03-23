@@ -21,7 +21,7 @@
 
     <link href="/assets/styles.css" rel="stylesheet">
     <script src="/assets/index.js" defer></script>
-    <title>Assignees Table - Sirius Case Management - OPG Data Dictionary</title>
+    <title>Tasks Table - Sirius Case Management - OPG Data Dictionary</title>
   </head>
   <body class="govuk-template__body">
     <a href="#content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
@@ -192,6 +192,7 @@
 
 
 
+
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
   
@@ -209,7 +210,7 @@
   
     
     <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="/sources/sirius/assignees">Assignees</a>
+      <a class="govuk-breadcrumbs__link" href="/sources/sirius/tasks">Tasks</a>
     </li>
     
   
@@ -217,15 +218,15 @@
 </div>
 
 
-<h1 class="govuk-heading-l">Assignees Table - Sirius Case Management</h1>
+<h1 class="govuk-heading-l">Tasks Table - Sirius Case Management</h1>
 
-<p class="govuk-body-l"> Contains details of teams and users who can be assigned to cases or tasks</p>
+<p class="govuk-body-l"> Tasks assigned to users and teams</p>
 <p class="govuk-body"><strong>Stability:</strong> 
 
-The assignees table is to be considered <strong>unstable</strong> .</p>
+The tasks table is to be considered <strong>unstable</strong> .</p>
 
 <p class="govuk-body"><strong>Analytical Platform</strong> :  Yes </p>
-<p class="govuk-body"><strong>Alternative formats</strong> : <a href="/data/assignees.json"><abbr title="JavaScript Object Notation"><strong class="govuk-tag govuk-tag--orange">
+<p class="govuk-body"><strong>Alternative formats</strong> : <a href="/data/tasks.json"><abbr title="JavaScript Object Notation"><strong class="govuk-tag govuk-tag--orange">
   JSON
 </strong>
 </abbr></a>
@@ -233,7 +234,7 @@ The assignees table is to be considered <strong>unstable</strong> .</p>
 
 
 <table class="govuk-table govuk-!-font-size-16">
-      <caption class="govuk-table__caption govuk-table__caption--m">assignees table columns</caption>
+      <caption class="govuk-table__caption govuk-table__caption--m">tasks table columns</caption>
       <thead class="govuk-table__head">
     <tr class="govuk-table__row">
         <th scope="col"  class="govuk-table__header">
@@ -255,6 +256,52 @@ The assignees table is to be considered <strong>unstable</strong> .</p>
         Constrained values
         </th>
 
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            <a href="#column__completedby_id" id="column__completedby_id" class="heading-link">
+            completedby_id
+            </a>
+        </td>
+        <td class="govuk-table__cell">
+            integer
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            <a href="#column__assignee_id" id="column__assignee_id" class="heading-link">
+            assignee_id
+            </a>
+        </td>
+        <td class="govuk-table__cell">
+            integer
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
     
     <tr>
         <th scope="row" class="govuk-table__header">
@@ -281,18 +328,156 @@ The assignees table is to be considered <strong>unstable</strong> .</p>
     
     <tr>
         <th scope="row" class="govuk-table__header">
-            <a href="#column__name" id="column__name" class="heading-link">
-            name
+            <a href="#column__powerofattorney_id" id="column__powerofattorney_id" class="heading-link">
+            powerofattorney_id
             </a>
         </td>
         <td class="govuk-table__cell">
-            character varying
+            integer
         </td>
         <td class="govuk-table__cell">
-            255
+            
         </td>
         <td class="govuk-table__cell">
             NO
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            <a href="#column__duedate" id="column__duedate" class="heading-link">
+            duedate
+            </a>
+        </td>
+        <td class="govuk-table__cell">
+            timestamp without time zone
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::timestamp without time zone
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            <a href="#column__activedate" id="column__activedate" class="heading-link">
+            activedate
+            </a>
+        </td>
+        <td class="govuk-table__cell">
+            timestamp without time zone
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::timestamp without time zone
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            <a href="#column__completeddate" id="column__completeddate" class="heading-link">
+            completeddate
+            </a>
+        </td>
+        <td class="govuk-table__cell">
+            timestamp without time zone
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            NULL::timestamp without time zone
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            <a href="#column__createdtime" id="column__createdtime" class="heading-link">
+            createdtime
+            </a>
+        </td>
+        <td class="govuk-table__cell">
+            timestamp without time zone
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            NO
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            <a href="#column__systemtype" id="column__systemtype" class="heading-link">
+            systemtype
+            </a>
+        </td>
+        <td class="govuk-table__cell">
+            integer
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            <a href="#column__caseownertask" id="column__caseownertask" class="heading-link">
+            caseownertask
+            </a>
+        </td>
+        <td class="govuk-table__cell">
+            boolean
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            YES
         </td>
         <td class="govuk-table__cell">
             
@@ -315,28 +500,20 @@ The assignees table is to be considered <strong>unstable</strong> .</p>
             255
         </td>
         <td class="govuk-table__cell">
-            NO
+            YES
         </td>
         <td class="govuk-table__cell">
-            
+            NULL::character varying
         </td>
         <td class="govuk-table__cell">
-            
-            assignee_team,<br>
-            
-            assignee_user,<br>
-            
-            assignee_machine,<br>
-            
-            assignee_null,<br>
             
         </td>
     </tr>
     
     <tr>
         <th scope="row" class="govuk-table__header">
-            <a href="#column__email" id="column__email" class="heading-link">
-            email
+            <a href="#column__status" id="column__status" class="heading-link">
+            status
             </a>
         </td>
         <td class="govuk-table__cell">
@@ -358,8 +535,8 @@ The assignees table is to be considered <strong>unstable</strong> .</p>
     
     <tr>
         <th scope="row" class="govuk-table__header">
-            <a href="#column__surname" id="column__surname" class="heading-link">
-            surname
+            <a href="#column__priority" id="column__priority" class="heading-link">
+            priority
             </a>
         </td>
         <td class="govuk-table__cell">
@@ -381,54 +558,8 @@ The assignees table is to be considered <strong>unstable</strong> .</p>
     
     <tr>
         <th scope="row" class="govuk-table__header">
-            <a href="#column__roles" id="column__roles" class="heading-link">
-            roles
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            json
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__suspended" id="column__suspended" class="heading-link">
-            suspended
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            boolean
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            false
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__phonenumber" id="column__phonenumber" class="heading-link">
-            phonenumber
+            <a href="#column__name" id="column__name" class="heading-link">
+            name
             </a>
         </td>
         <td class="govuk-table__cell">
@@ -450,12 +581,12 @@ The assignees table is to be considered <strong>unstable</strong> .</p>
     
     <tr>
         <th scope="row" class="govuk-table__header">
-            <a href="#column__deleted" id="column__deleted" class="heading-link">
-            deleted
+            <a href="#column__description" id="column__description" class="heading-link">
+            description
             </a>
         </td>
         <td class="govuk-table__cell">
-            timestamp without time zone
+            text
         </td>
         <td class="govuk-table__cell">
             
@@ -465,97 +596,6 @@ The assignees table is to be considered <strong>unstable</strong> .</p>
         </td>
         <td class="govuk-table__cell">
             
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__teamtype" id="column__teamtype" class="heading-link">
-            teamtype
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            character varying
-        </td>
-        <td class="govuk-table__cell">
-            255
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            NULL::character varying
-        </td>
-        <td class="govuk-table__cell">
-            
-            ALLOCATIONS,<br>
-            
-            COMPLAINTS,<br>
-            
-            CORPORATE,<br>
-            
-            FINANCE,<br>
-            
-            HW,<br>
-            
-            INVESTIGATIONS,<br>
-            
-            LAY,<br>
-            
-            NOT_APPROPRIATE,<br>
-            
-            PA,<br>
-            
-            PRO,<br>
-            
-            VISITS,<br>
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__updateddate" id="column__updateddate" class="heading-link">
-            updateddate
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            timestamp without time zone
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            NULL::timestamp without time zone
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-    </tr>
-    
-    <tr>
-        <th scope="row" class="govuk-table__header">
-            <a href="#column__permanent" id="column__permanent" class="heading-link">
-            permanent
-            </a>
-        </td>
-        <td class="govuk-table__cell">
-            boolean
-        </td>
-        <td class="govuk-table__cell">
-            
-        </td>
-        <td class="govuk-table__cell">
-            YES
-        </td>
-        <td class="govuk-table__cell">
-            false
         </td>
         <td class="govuk-table__cell">
             
