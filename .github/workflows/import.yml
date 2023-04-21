@@ -32,4 +32,4 @@ jobs:
           git add ./src/_data/
           git commit -m "Import definitions from Sirius to Dictionary"
           git push origin
-          gh pr create --title "Date tables update" --body "Updating tables for data from Sirius tables"
+          gh pr create --title "Data tables update" --body "Updating tables for data from Sirius tables"
