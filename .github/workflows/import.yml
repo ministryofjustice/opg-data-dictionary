@@ -21,11 +21,15 @@ jobs:
       - name: Build    
         run: |
           cd ./data-dictionary
+          branch=import-$(date +'%Y-%m-%d') 
+          git branch $branch
+          git switch $branch
           cp ../source-data/* ./src/_data/
           echo "**Changed files pulled from Sirius data definitions:**" >> $GITHUB_STEP_SUMMARY
           git status -s >> $GITHUB_STEP_SUMMARY
           git config --global user.email "tools@digital.justice.gov.uk"
           git config --global user.name "Github Action"
           git add ./src/_data/
-          git commit -m "Imported definitions from Sirius to Dictionary"
+          git commit -m "Import definitions from Sirius to Dictionary"
           git push origin
+          gh pr create --title "Date tables update" --body "Updating tables for data from Sirius tables"
