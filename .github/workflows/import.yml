@@ -18,7 +18,9 @@ jobs:
         with: 
           path: 'data-dictionary'
 
-      - name: Build    
+      - name: Build
+        env:
+          GH_TOKEN:  ${{ secrets.ORG_ACCESS_TOKEN }}    
         run: |
           cd ./data-dictionary
           branch=import-$(date +'%Y-%m-%d') 
