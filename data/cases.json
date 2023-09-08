@@ -59,7 +59,7 @@
     "column_name": "casetype",
     "data_type": "character varying",
     "column_default": "NULL::character varying",
-    "is_nullable": "YES",
+    "is_nullable": "NO",
     "character_maximum_length": 255
   },
   {
@@ -108,42 +108,42 @@
     "column_name": "caseattorneysingular",
     "data_type": "boolean",
     "column_default": "false",
-    "is_nullable": "NO",
+    "is_nullable": "YES",
     "character_maximum_length": null
   },
   {
     "column_name": "caseattorneyjointlyandseverally",
     "data_type": "boolean",
     "column_default": "false",
-    "is_nullable": "NO",
+    "is_nullable": "YES",
     "character_maximum_length": null
   },
   {
     "column_name": "caseattorneyjointly",
     "data_type": "boolean",
     "column_default": "false",
-    "is_nullable": "NO",
+    "is_nullable": "YES",
     "character_maximum_length": null
   },
   {
     "column_name": "caseattorneyjointlyandjointlyandseverally",
     "data_type": "boolean",
     "column_default": "false",
-    "is_nullable": "NO",
+    "is_nullable": "YES",
     "character_maximum_length": null
   },
   {
     "column_name": "caseattorneyactionadditionalinfo",
     "data_type": "boolean",
     "column_default": "false",
-    "is_nullable": "NO",
+    "is_nullable": "YES",
     "character_maximum_length": null
   },
   {
     "column_name": "repeatapplication",
     "data_type": "boolean",
     "column_default": "false",
-    "is_nullable": "NO",
+    "is_nullable": "YES",
     "character_maximum_length": null
   },
   {
