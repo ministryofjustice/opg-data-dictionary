@@ -45,7 +45,7 @@
     "column_name": "direction",
     "data_type": "integer",
     "column_default": "0",
-    "is_nullable": "YES",
+    "is_nullable": "NO",
     "character_maximum_length": null
   },
   {
