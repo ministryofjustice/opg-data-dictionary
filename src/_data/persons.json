@@ -301,13 +301,6 @@
     "character_maximum_length": 255
   },
   {
-    "column_name": "fullname",
-    "data_type": "character varying",
-    "column_default": "NULL::character varying",
-    "is_nullable": "YES",
-    "character_maximum_length": 255
-  },
-  {
     "column_name": "caserecnumber",
     "data_type": "character varying",
     "column_default": "NULL::character varying",
