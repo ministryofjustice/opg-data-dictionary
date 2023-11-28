@@ -29,7 +29,7 @@
   },
   {
     "column_name": "amount",
-    "data_type": "numeric",
+    "data_type": "integer",
     "column_default": null,
     "is_nullable": "NO",
     "character_maximum_length": null
