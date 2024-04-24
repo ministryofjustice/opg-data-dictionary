@@ -1,0 +1,3 @@
+[submodule "submodules/opg-data-lpa-store"]
+	path = submodules/opg-data-lpa-store
+	url = https://github.com/ministryofjustice/opg-data-lpa-store
