@@ -11,12 +11,14 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy({ 'src/_data': 'data' });
 
+    eleventyConfig.addPassthroughCopy({ 'submodules/opg-data-lpa-store/docs/schemas': 'schema/lpa/' });
+
     eleventyConfig.addNunjucksGlobal("is_number", (str) => { return !isNaN(str) })
 
     eleventyConfig.addFilter('log', value => {
         console.log(value)
     })
-    
+
     eleventyConfig.addFilter('dateFilter', dateFilter);
     eleventyConfig.addFilter('date24HourFilter', date24HourFilter);
     eleventyConfig.addFilter('keySort', keySort);
