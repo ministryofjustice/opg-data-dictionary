@@ -1,0 +1,9 @@
+---
+title: Finance Client Table - Sirius Case Management
+layout: layouts/fullwidth.njk
+---
+{% set table = finance_client %}
+{% set refdata = finance_client_refdata %}
+{% set metadata = sirius.tables.finance_client %}
+
+{% include "../../_includes/layouts/dataTableInfo.njk" %}

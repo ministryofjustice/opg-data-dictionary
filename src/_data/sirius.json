@@ -68,11 +68,11 @@
             "name": "warnings",
             "display": false
         },
-        "finance_invoice": {
-            "name": "finance_invoice",
+        "invoice": {
+            "name": "invoice",
             "display": true,
             "stability": "unstable",
-            "summary": "Contains details of finance invoices associated with deputies in the database",
+            "summary": "Contains details of finance invoices associated with deputies in the database. Previously finance_invoice.",
             "in_analytical_platform": true
         },
         "finance_order": {
@@ -82,11 +82,11 @@
             "summary": "Contains details of order fnance information for deputies",
             "in_analytical_platform": true
         },
-        "finance_person": {
-            "name": "finance_person",
+        "finance_client": {
+            "name": "finance_client",
             "display": true,
             "stability": "unstable",
-            "summary": "Contains details of deputies who pay invoices in the database",
+            "summary": "Contains details of deputies who pay invoices in the database. Previously finance_person.",
             "in_analytical_platform": true
         },
         "finance_remission_exemption": {
