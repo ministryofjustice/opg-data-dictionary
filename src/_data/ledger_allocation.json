@@ -1,0 +1,79 @@
+[
+  {
+    "column_name": "id",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "NO",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "ledger_id",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "invoice_id",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "datetime",
+    "data_type": "timestamp without time zone",
+    "column_default": null,
+    "is_nullable": "NO",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "amount",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "NO",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "status",
+    "data_type": "character varying",
+    "column_default": null,
+    "is_nullable": "NO",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "reference",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 25
+  },
+  {
+    "column_name": "notes",
+    "data_type": "text",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "allocateddate",
+    "data_type": "date",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "batchnumber",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "source",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 20
+  }
+]
