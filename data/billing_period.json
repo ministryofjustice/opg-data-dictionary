@@ -1,0 +1,37 @@
+[
+  {
+    "column_name": "id",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "NO",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "finance_client_id",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "order_id",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "start_date",
+    "data_type": "date",
+    "column_default": null,
+    "is_nullable": "NO",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "end_date",
+    "data_type": "date",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  }
+]

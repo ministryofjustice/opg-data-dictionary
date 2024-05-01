@@ -1,0 +1,121 @@
+[
+  {
+    "column_name": "id",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "NO",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "reference",
+    "data_type": "character varying",
+    "column_default": null,
+    "is_nullable": "NO",
+    "character_maximum_length": 50
+  },
+  {
+    "column_name": "datetime",
+    "data_type": "timestamp without time zone",
+    "column_default": null,
+    "is_nullable": "NO",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "method",
+    "data_type": "character varying",
+    "column_default": null,
+    "is_nullable": "NO",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "amount",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "NO",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "notes",
+    "data_type": "text",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "type",
+    "data_type": "character varying",
+    "column_default": null,
+    "is_nullable": "NO",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "status",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "NO",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "finance_client_id",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "parent_id",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "fee_reduction_id",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "confirmeddate",
+    "data_type": "date",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "bankdate",
+    "data_type": "date",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "batchnumber",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "bankaccount",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "source",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 20
+  },
+  {
+    "column_name": "line",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  }
+]
