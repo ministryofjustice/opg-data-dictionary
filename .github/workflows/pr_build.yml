@@ -12,6 +12,9 @@ jobs:
         with:
           submodules: true
 
+      - name: Update submodules
+        run: git submodule update --remote
+
       - name: Install and Build
         run: |
           npm install
