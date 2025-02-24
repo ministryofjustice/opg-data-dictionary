@@ -392,13 +392,6 @@
     "character_maximum_length": 40
   },
   {
-    "column_name": "newsletter",
-    "data_type": "boolean",
-    "column_default": "false",
-    "is_nullable": "YES",
-    "character_maximum_length": null
-  },
-  {
     "column_name": "specialcorrespondencerequirements_audiotape",
     "data_type": "boolean",
     "column_default": "false",
