@@ -4,7 +4,7 @@
   "description": "A lasting power of attorney document",
   "allOf": [
     {
-      "$ref": "https://data-dictionary.opg.service.justice.gov.uk/schema/lpa/2024-10/donor-details.json"
+      "$ref": "https://data-dictionary.opg.service.justice.gov.uk/schema/lpa/2024-10/donor-details-partial.json"
     }
   ],
   "type": "object",
@@ -35,6 +35,42 @@
       "type": "string",
       "format": "date-time"
     },
+    "howAttorneysMakeDecisions": {
+      "type": "string",
+      "enum": [
+        "jointly",
+        "jointly-and-severally",
+        "jointly-for-some-severally-for-others"
+      ]
+    },
+    "howAttorneysMakeDecisionsIsDefault": {
+      "type": "boolean"
+    },
+    "howReplacementAttorneysMakeDecisions": {
+      "type": "string",
+      "enum": [
+        "jointly",
+        "jointly-and-severally",
+        "jointly-for-some-severally-for-others"
+      ]
+    },
+    "howReplacementAttorneysMakeDecisionsIsDefault": {
+      "type": "boolean"
+    },
+    "whenTheLpaCanBeUsed": {
+      "type": "string",
+      "enum": ["when-capacity-lost", "when-has-capacity"]
+    },
+    "whenTheLpaCanBeUsedIsDefault": {
+      "type": "boolean"
+    },
+    "lifeSustainingTreatmentOption": {
+      "type": "string",
+      "enum": ["option-a", "option-b"]
+    },
+    "lifeSustainingTreatmentOptionIsDefault": {
+      "type": "boolean"
+    },
     "attorneys": {
       "type": "array",
       "items": {
@@ -46,7 +82,7 @@
           },
           "status": {
             "type": "string",
-            "enum": ["active", "inactive", "replacement", "removed"]
+            "enum": ["active", "inactive", "removed"]
           },
           "appointmentType": {
             "type": "string",
