@@ -1,0 +1,51 @@
+[
+    {
+        "column_name": "id",
+        "data_type": "integer",
+        "column_default": null,
+        "is_nullable": "NO",
+        "character_maximum_length": null
+    },
+{
+        "column_name": "lpa_id",
+        "data_type": "character varying",
+        "column_default": null,
+        "is_nullable": "NO",
+        "character_maximum_length": 255
+    },
+{
+        "column_name": "actor_id",
+        "data_type": "character varying",
+        "column_default": null,
+        "is_nullable": "NO",
+        "character_maximum_length": 255
+    },                  
+{
+        "column_name": "actor_type",
+        "data_type": "character varying",
+        "column_default": null,
+        "is_nullable": "NO",
+        "character_maximum_length": 255
+    }, 
+{
+        "column_name": "channel",
+        "data_type": "character varying",
+        "column_default": null,
+        "is_nullable": "NO",
+        "character_maximum_length": 255
+    },
+{
+        "column_name": "signature_date",
+        "data_type": "date",
+        "column_default": null,
+        "is_nullable": "NO",
+        "character_maximum_length": null
+    },
+{
+        "column_name": "record_timestamp",
+        "data_type": "timestamp without time zone",
+        "column_default": null,
+        "is_nullable": "NO",
+        "character_maximum_length": null
+    }
+]

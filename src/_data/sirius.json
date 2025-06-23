@@ -165,6 +165,13 @@
             "stability":"unstable",
             "summary":"Tasks assigned to users and teams",
             "in_analytical_platform":true
+        },
+        "digitallpa_channel": {
+            "name": "digitallpa_channel",
+            "display": true,
+            "stability":"stable",
+            "summary":"Channel data for digital LPA signing.",
+            "in_analytical_platform":true
         }
     }
 }
