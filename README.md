@@ -10,7 +10,7 @@ This service is built using Eleventy. PRs are automatically raised on changes in
 
 ## Getting started
 
-```npm install```
+```npm ci --ignore-scripts```
 
 For a full build run:
 
