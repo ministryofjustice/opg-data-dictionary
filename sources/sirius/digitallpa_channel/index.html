@@ -21,7 +21,7 @@
 
     <link href="/assets/styles.css" rel="stylesheet">
     <script src="/assets/index.js" defer></script>
-    <title>Sirius Case Management - OPG Data Dictionary</title>
+    <title>Digital LPA Channel Data Table - Sirius Case Management - OPG Data Dictionary</title>
   </head>
   <body class="govuk-template__body">
     <a href="#content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
@@ -189,12 +189,16 @@
     <div class="govuk-grid-column-full">
         
 
+
+
+
+
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
   
     
     <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="/">Data Dictionary</a>
+      <a class="govuk-breadcrumbs__link" href="/">Date Dictionary</a>
     </li>
     
   
@@ -204,116 +208,221 @@
     </li>
     
   
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/sources/sirius/digitallpa_channel">Digitallpa_channel</a>
+    </li>
+    
+  
   </ol>
 </div>
 
-<h1 class="govuk-heading-l">Sirius Case Management</h1>
-<p class="govuk-body-l">Sirius is the case management system of the OPG. </p>
-<p class="govuk-body">Tables referenced here:</p>
-<ul class="govuk-body">
 
-    
-    <li><a class="govuk-link" href="addresses">addresses</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="annual_report_lodging_details">annual_report_lodging_details</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="annual_report_logs">annual_report_logs</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="annual_report_type_assignments">annual_report_type_assignments</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="assignees">assignees</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="bond_providers">bond_providers</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="bonds">bonds</a></li>
-    
- 
-    
- 
-    
- 
-    
-    <li><a class="govuk-link" href="cases">cases</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="complaints">complaints</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="digitallpa_channel">digitallpa_channel</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="documents">documents</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="finance_client">finance_client</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="finance_order">finance_order</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="finance_remission_exemption">finance_remission_exemption</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="investigation">investigation</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="invoice">invoice</a></li>
-    
- 
-    
- 
-    
- 
-    
- 
-    
- 
-    
- 
-    
-    <li><a class="govuk-link" href="persons">persons</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="supervision_level_log">supervision_level_log</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="supervision_notes">supervision_notes</a></li>
-    
- 
-    
-    <li><a class="govuk-link" href="tasks">tasks</a></li>
-    
- 
-    
- 
- </ul>
+<h1 class="govuk-heading-l">Digital LPA Channel Data Table - Sirius Case Management</h1>
 
- <a href="/data/sirius.json"><abbr title="JavaScript Object Notation"><strong class="govuk-tag govuk-tag--orange">
+<p class="govuk-body-l"> Channel data for digital LPA signing.</p>
+<p class="govuk-body"><strong>Stability:</strong> 
+
+The digitallpa_channel table is to be considered <strong>stable</strong> .</p>
+
+<p class="govuk-body"><strong>Analytical Platform</strong> :  Yes </p>
+<p class="govuk-body"><strong>Alternative formats</strong> : <a href="/data/digitallpa_channel.json"><abbr title="JavaScript Object Notation"><strong class="govuk-tag govuk-tag--orange">
   JSON
 </strong>
 </abbr></a>
+
+
+
+<table class="govuk-table govuk-!-font-size-16">
+      <caption class="govuk-table__caption govuk-table__caption--m">digitallpa_channel table columns</caption>
+      <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+        <th scope="col"  class="govuk-table__header">
+            Column Name
+        </th>
+         <th scope="col"  class="govuk-table__header">
+            Column Type
+        </th>
+        <th scope="col"  class="govuk-table__header">
+            Character Maximum
+        </th>
+        <th scope="col"  class="govuk-table__header">
+            Is Nullable
+        </th>
+        <th scope="col"  class="govuk-table__header">
+            Default
+        </th>
+        <th scope="col"  class="govuk-table__header">
+        Constrained values
+        </th>
+
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            <a href="#column__id" id="column__id" class="heading-link">
+            id
+            </a>
+        </td>
+        <td class="govuk-table__cell">
+            integer
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            NO
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            <a href="#column__lpa_id" id="column__lpa_id" class="heading-link">
+            lpa_id
+            </a>
+        </td>
+        <td class="govuk-table__cell">
+            character varying
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            NO
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            <a href="#column__actor_id" id="column__actor_id" class="heading-link">
+            actor_id
+            </a>
+        </td>
+        <td class="govuk-table__cell">
+            character varying
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            NO
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            <a href="#column__actor_type" id="column__actor_type" class="heading-link">
+            actor_type
+            </a>
+        </td>
+        <td class="govuk-table__cell">
+            character varying
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            NO
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            <a href="#column__channel" id="column__channel" class="heading-link">
+            channel
+            </a>
+        </td>
+        <td class="govuk-table__cell">
+            character varying
+        </td>
+        <td class="govuk-table__cell">
+            255
+        </td>
+        <td class="govuk-table__cell">
+            NO
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            <a href="#column__signature_date" id="column__signature_date" class="heading-link">
+            signature_date
+            </a>
+        </td>
+        <td class="govuk-table__cell">
+            date
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            NO
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row" class="govuk-table__header">
+            <a href="#column__record_timestamp" id="column__record_timestamp" class="heading-link">
+            record_timestamp
+            </a>
+        </td>
+        <td class="govuk-table__cell">
+            timestamp without time zone
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            NO
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+        <td class="govuk-table__cell">
+            
+        </td>
+    </tr>
+    
+</table>     
+ 
+
+
+
 
     </div>
 </div>
