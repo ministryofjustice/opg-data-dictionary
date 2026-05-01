@@ -17,5 +17,4 @@ jobs:
 
       - name: Install and Build
         run: |
-          npm ci --ignore-scripts
-          npm run build
+          docker compose up builder
