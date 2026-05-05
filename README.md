@@ -17,3 +17,5 @@ For a full build run:
 To serve locally
 
 ```docker compose up server```
+
+The site will run on http://localhost:8089
