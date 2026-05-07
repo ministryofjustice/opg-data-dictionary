@@ -10,12 +10,12 @@ This service is built using Eleventy. PRs are automatically raised on changes in
 
 ## Getting started
 
-```npm ci --ignore-scripts```
-
 For a full build run:
 
-```npm run build```
+```docker compose up builder```
 
 To serve locally
 
-```npm run start```
+```docker compose up server```
+
+The site will run on http://localhost:8089
