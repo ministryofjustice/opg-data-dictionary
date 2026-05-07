@@ -49,7 +49,7 @@
     "character_maximum_length": null
   },
   {
-    "column_name": "systemstatus",
+    "column_name": "isactive",
     "data_type": "boolean",
     "column_default": "true",
     "is_nullable": "NO",
