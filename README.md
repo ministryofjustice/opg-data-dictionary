@@ -6,7 +6,11 @@ This is a prototype of a data dictionary website for the Office of the Public Gu
 
 Aim is to provide a clear map of what data is in which systems, its formats and flag data flows within the organisation.
 
-This service is built using Eleventy. PRs are automatically raised on changes in Sirius core.
+## Data source
+
+A regular scheduled job updates `src/_data/sirius_tables` with the latest data from Sirius, using the "data-dictionary-json" artifact that it generates.
+
+Additional metadata—summary, stability, whether it's exported to Analytical Platform—can be provided by updating `sirius.json`. Refdata can be added by creating a "${table}_refdata.json" file matching the table name in the `src/_data` directory.
 
 ## Getting started
 
