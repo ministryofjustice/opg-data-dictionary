@@ -1,0 +1,54 @@
+---
+pagination:
+  data: sirius_tables
+  size: 1
+  alias: tableID
+permalink: "sources/sirius/{{ tableID | slugify }}/"
+eleventyComputed:
+  title: "{{ tableID }} table - Sirius Case Management"
+layout: layouts/fullwidth.njk
+---
+{%- from "../../_includes/macros/dataTable.njk" import dataTable -%}
+{%- from "../../../node_modules/govuk-frontend/govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs -%}
+{%- from "../../../node_modules/govuk-frontend/govuk/components/tag/macro.njk" import govukTag -%}
+
+{% set table = sirius_tables[tableID] %}
+{% set metadata = sirius.tables[tableID] %}
+{% set refdata = tableID | refdata %}
+
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Date Dictionary",
+      href: "/"
+    },
+    {
+      text: "Sirius",
+      href: "/sources/sirius/"
+    },
+    {
+      text: tableID,
+      href: permalink
+    }
+  ]
+}) }}
+
+<h1 class="govuk-heading-l">{{tableID}}</h1>
+{% if metadata %}
+<p class="govuk-body-l"> {{metadata.summary}}</p>
+<p class="govuk-body"><strong>Stability:</strong>
+
+The {{metadata.name}} table is to be considered <strong>{{metadata.stability}}</strong>{% if table.stability=="unstable" %}
+
+and likely to change due to ongoing development work {% endif %}.</p>
+
+<p class="govuk-body"><strong>Analytical Platform</strong> : {% if metadata.in_analytical_platform %} Yes {% else %} No{% endif %}</p>
+<p class="govuk-body"><strong>Alternative formats</strong> : <a href="/data/{{metadata.name}}.json"><abbr title="JavaScript Object Notation">{{ govukTag({
+  text: "JSON",
+  classes: "govuk-tag--orange"
+}) }}</abbr></a>
+{% endif %}
+{{ dataTable(table, refdata, metadata)}}
+
+
+

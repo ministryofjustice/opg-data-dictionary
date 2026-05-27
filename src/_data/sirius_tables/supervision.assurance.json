@@ -1,0 +1,107 @@
+[
+  {
+    "column_name": "requesteddate",
+    "data_type": "timestamp without time zone",
+    "column_default": null,
+    "is_nullable": "NO",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "requestedby",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "reviewedby",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "commissioneddate",
+    "data_type": "timestamp without time zone",
+    "column_default": "NULL::timestamp without time zone",
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "reportduedate",
+    "data_type": "timestamp without time zone",
+    "column_default": "NULL::timestamp without time zone",
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "id",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "NO",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "reportreceiveddate",
+    "data_type": "timestamp without time zone",
+    "column_default": "NULL::timestamp without time zone",
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "deputy_id",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "reportreviewdate",
+    "data_type": "timestamp without time zone",
+    "column_default": "NULL::timestamp without time zone",
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "type",
+    "data_type": "character varying",
+    "column_default": null,
+    "is_nullable": "NO",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "assurancevisitoutcome",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "reportmarkedas",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "visitorallocated",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "pdroutcome",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "note",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 1000
+  }
+]

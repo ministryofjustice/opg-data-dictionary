@@ -1,74 +1,74 @@
 {
     "name": "Sirius Case Management",
     "tables": {
-        "persons": {
+        "public.persons": {
             "display": true,
             "name":"persons",
             "stability":"unstable",
             "summary":" The persons table includes data on people within the Sirius system. It contains both LPA, Guardianship and Supervision data, as well as data relating to persons who are informed parties.",
             "in_analytical_platform":true
         },
-        "addresses": {
+        "public.addresses": {
             "name": "addresses",
             "display": true,
             "stability": "unstable",
             "summary": "Contains details of addresses associated with persons in the database",
             "in_analytical_platform": true
         },
-        "caseitem_document": {
+        "public.caseitem_document": {
             "name": "caseitem_document",
             "display": false
         },
-        "caseitem_warning": {
+        "public.caseitem_warning": {
             "name": "caseitem_warning",
             "display": false
         },
-        "cases": {
+        "public.cases": {
             "name": "cases",
             "display": true,
             "stability":"unstable",
             "summary":"Contains details of LPA, Supervision and Guardianship cases",
             "in_analytical_platform":true
         },
-        "complaints": {
+        "poa.complaints": {
             "name": "complaints",
             "display": true,
             "stability":"stable",
             "summary":"Contains details of customer complaints",
             "in_analytical_platform":true
         },
-        "documents": {
+        "public.documents": {
             "name": "documents",
             "display": true,
             "stability": "unstable",
             "summary": "Contains details of documents associated with persons in the database",
             "in_analytical_platform": true
         },
-        "pa_applicants": {
+        "public.pa_applicants": {
             "name": "pa_applicants",
             "display": false
         },
-        "person_caseitem": {
+        "public.person_caseitem": {
             "name": "person_caseitem",
             "display": false
         },
-        "person_research_preferences": {
+        "public.person_research_preferences": {
             "name": "person_research_preferences",
             "display": false
         },
-        "person_warning”": {
+        "public.person_warning”": {
             "name": "person_warning”",
             "display": false
         },
-        "person_document": {
+        "public.person_document": {
             "name": "person_document",
             "display": false
         },
-        "warnings": {
+        "public.warnings": {
             "name": "warnings",
             "display": false
         },
-        "invoice": {
+        "supervision_finance.invoice": {
             "name": "invoice",
             "display": true,
             "stability": "unstable",
@@ -82,7 +82,7 @@
             "summary": "Contains details of order fnance information for deputies",
             "in_analytical_platform": true
         },
-        "finance_client": {
+        "supervision_finance.finance_client": {
             "name": "finance_client",
             "display": true,
             "stability": "unstable",
@@ -96,77 +96,77 @@
             "summary": "Contains details of deputies who have fee reductions or exemptions in the database",
             "in_analytical_platform": true
         },
-        "investigation": {
+        "poa.investigation": {
             "name": "investigation",
             "display": true,
             "stability": "unstable",
             "summary": "Contains details of deputies who have investigations in the database",
             "in_analytical_platform": true
         },
-        "annual_report_logs": {
+        "supervision.annual_report_logs": {
             "name": "annual_report_logs",
             "display": true,
             "stability": "unstable",
             "summary": "Contains details of annual reports associated with deputies",
             "in_analytical_platform": true
         },
-        "annual_report_lodging_details": {
+        "supervision.annual_report_lodging_details": {
             "name": "annual_report_lodging_details",
             "display": true,
             "stability": "unstable",
             "summary": "Contains details of annual reports lodging associated with deputies",
             "in_analytical_platform": true
         },
-        "annual_report_type_assignments": {
+        "supervision.annual_report_type_assignments": {
             "name": "annual_report_type_assignments",
             "display": true,
             "stability": "unstable",
             "summary": "Contains details of annual reports types associated with deputies",
             "in_analytical_platform": true
         },
-        "assignees": {
+        "public.assignees": {
             "name": "assignees",
             "display": true,
             "stability": "unstable",
             "summary": "Contains details of teams and users who can be assigned to cases or tasks",
             "in_analytical_platform": true
         },
-        "supervision_level_log": {
+        "public.supervision_level_log": {
             "name": "supervision_level_log",
             "display": true,
             "stability":"unstable",
             "summary":"The historic supervision level log for deputies",
             "in_analytical_platform":true
         },
-        "supervision_notes": {
+        "supervision.supervision_notes": {
             "name": "supervision_notes",
             "display": true,
             "stability":"unstable",
             "summary":"Notes relating to clients on deputyships",
             "in_analytical_platform":true
         },
-        "bonds": {
+        "supervision.bonds": {
             "name": "bonds",
             "display": true,
             "stability":"unstable",
             "summary":"Bonds relating to clients on deputyships",
             "in_analytical_platform":true
         },
-        "bond_providers": {
+        "supervision.bond_providers": {
             "name": "bond_providers",
             "display": true,
             "stability":"unstable",
             "summary":"Providers of Bonds associated with clients on deputyships",
             "in_analytical_platform":true
         },
-        "tasks": {
+        "public.tasks": {
             "name": "tasks",
             "display": true,
             "stability":"unstable",
             "summary":"Tasks assigned to users and teams",
             "in_analytical_platform":true
         },
-        "digitallpa_channel": {
+        "analytics_export.digitallpa_channel": {
             "name": "digitallpa_channel",
             "display": true,
             "stability":"stable",

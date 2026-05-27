@@ -19,6 +19,10 @@ module.exports = function (eleventyConfig) {
         console.log(value)
     })
 
+    eleventyConfig.addFilter("refdata", function (tableID) {
+        return this.getVariables()[tableID + "_refdata"] || [];
+    });
+
     eleventyConfig.addFilter('dateFilter', dateFilter);
     eleventyConfig.addFilter('date24HourFilter', date24HourFilter);
     eleventyConfig.addFilter('keySort', keySort);
@@ -30,3 +34,4 @@ module.exports = function (eleventyConfig) {
         passthroughFileCopy: true
     }
 }
+

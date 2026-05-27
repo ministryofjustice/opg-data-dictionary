@@ -1,0 +1,72 @@
+[
+  {
+    "column_name": "id",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "NO",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "person_id",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "proofofdeathreceived",
+    "data_type": "boolean",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "datelettersentout",
+    "data_type": "date",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "datedeathcertificatereceived",
+    "data_type": "date",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "datenotified",
+    "data_type": "date",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "notifiedby",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "notifiedbyother",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "notificationmethod",
+    "data_type": "character varying",
+    "column_default": "NULL::character varying",
+    "is_nullable": "YES",
+    "character_maximum_length": 255
+  },
+  {
+    "column_name": "notes",
+    "data_type": "text",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  }
+]
