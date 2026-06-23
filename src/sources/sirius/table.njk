@@ -43,7 +43,7 @@ The {{metadata.name}} table is to be considered <strong>{{metadata.stability}}</
 and likely to change due to ongoing development work {% endif %}.</p>
 
 <p class="govuk-body"><strong>Analytical Platform</strong> : {% if metadata.in_analytical_platform %} Yes {% else %} No{% endif %}</p>
-<p class="govuk-body"><strong>Alternative formats</strong> : <a href="/data/{{metadata.name}}.json"><abbr title="JavaScript Object Notation">{{ govukTag({
+<p class="govuk-body"><strong>Alternative formats</strong> : <a href="/data/sirius_tables/{{tableID}}.json"><abbr title="JavaScript Object Notation">{{ govukTag({
   text: "JSON",
   classes: "govuk-tag--orange"
 }) }}</abbr></a>
