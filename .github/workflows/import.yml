@@ -1,37 +1,26 @@
 name: Import Data from Sirius
 on:
   schedule:
-    - cron: '0 7 * * 1-5'
+    - cron: "0 7 * * 1-5"
+  workflow_dispatch:
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
       - name: Pull Sirius Source data
         env:
-          GITHUB_TOKEN:  ${{ secrets.ORG_ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ORG_ACCESS_TOKEN }}
         run: |
-          mkdir ./source-data
-          gh run download -n data-dictionary-json  -R ministryofjustice/opg-sirius -D ./source-data
+          gh run download -n data-dictionary-json  -R ministryofjustice/opg-sirius -D /tmp/sirius_tables/
+          cp /tmp/sirius_tables/* ./src/_data/sirius_tables/
 
-      - name: Checkout
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd #v6.0.2
+      - name: Create a signed commit
+        uses: ministryofjustice/modernisation-platform-github-actions/signed-commit@94f69f8b54a572761f1dfb8d723ba7b71b3f671a # v6.1.1
         with:
-          path: 'data-dictionary'
-
-      - name: Build
-        env:
-          GH_TOKEN:  ${{ secrets.ORG_ACCESS_TOKEN }}
-        run: |
-          cd ./data-dictionary
-          branch=import-$(date +'%Y-%m-%d')
-          git branch $branch
-          git switch $branch
-          cp ../source-data/* ./src/_data/sirius_tables/
-          echo "**Changed files pulled from Sirius data definitions:**" >> $GITHUB_STEP_SUMMARY
-          git status -s >> $GITHUB_STEP_SUMMARY
-          git config --global user.email "tools@digital.justice.gov.uk"
-          git config --global user.name "Github Action"
-          git add ./src/_data/
-          git commit -m "Import definitions from Sirius to Dictionary"
-          git push --set-upstream origin $branch
-          gh pr create --title "Data tables update" --body "Updating tables for data from Sirius tables"
+          github_token: ${{ secrets.ORG_ACCESS_TOKEN }}
+          pr_title: "Data tables update"
+          pr_body: "Updating tables for data from Sirius tables"
