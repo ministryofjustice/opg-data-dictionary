@@ -2,6 +2,10 @@ name: Import Data from Sirius
 on:
   schedule:
     - cron: '0 7 * * 1-5'
+  pull_request:
+    branches:
+      - main
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -13,6 +17,12 @@ jobs:
           mkdir ./source-data
           gh run download -n data-dictionary-json  -R ministryofjustice/opg-sirius -D ./source-data
 
+      - uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
+        id: app-token
+        with:
+          client-id: ${{ secrets.GH_APP_CLIENT_ID }}
+          private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd #v6.0.2
         with:
@@ -20,10 +30,12 @@ jobs:
 
       - name: Build
         env:
-          GH_TOKEN:  ${{ secrets.ORG_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
           cd ./data-dictionary
           branch=import-$(date +'%Y-%m-%d')
+          git config user.name "opg-data-dictionary[bot]"
+          git config user.email "4122086+opg-data-dictionary[bot]@users.noreply.github.com"
           git branch $branch
           git switch $branch
           cp ../source-data/* ./src/_data/sirius_tables/
