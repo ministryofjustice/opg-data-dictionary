@@ -2,7 +2,7 @@
   {
     "column_name": "id",
     "data_type": "integer",
-    "column_default": "nextval('supervision.visitor_id_seq'::regclass)",
+    "column_default": null,
     "is_nullable": "NO",
     "character_maximum_length": null
   },
