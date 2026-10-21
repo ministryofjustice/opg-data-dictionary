@@ -49,13 +49,6 @@
     "character_maximum_length": null
   },
   {
-    "column_name": "attorneydeclarationsignature",
-    "data_type": "boolean",
-    "column_default": null,
-    "is_nullable": "YES",
-    "character_maximum_length": null
-  },
-  {
     "column_name": "attorneydeclarationsignaturewitness",
     "data_type": "boolean",
     "column_default": "false",
@@ -276,6 +269,13 @@
     "column_name": "filingdate",
     "data_type": "timestamp without time zone",
     "column_default": "NULL::timestamp without time zone",
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "applicationhascontinuationsheets",
+    "data_type": "boolean",
+    "column_default": null,
     "is_nullable": "YES",
     "character_maximum_length": null
   },
@@ -562,6 +562,13 @@
   {
     "column_name": "attorneydeclarationsignaturedate",
     "data_type": "date",
+    "column_default": null,
+    "is_nullable": "YES",
+    "character_maximum_length": null
+  },
+  {
+    "column_name": "attorneydeclarationsignature",
+    "data_type": "boolean",
     "column_default": null,
     "is_nullable": "YES",
     "character_maximum_length": null
