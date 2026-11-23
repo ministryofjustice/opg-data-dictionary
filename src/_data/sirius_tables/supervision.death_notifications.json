@@ -21,13 +21,6 @@
     "character_maximum_length": null
   },
   {
-    "column_name": "datelettersentout",
-    "data_type": "date",
-    "column_default": null,
-    "is_nullable": "YES",
-    "character_maximum_length": null
-  },
-  {
     "column_name": "datedeathcertificatereceived",
     "data_type": "date",
     "column_default": null,
